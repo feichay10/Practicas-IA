@@ -105,4 +105,3 @@ int main() {
   std::cout << "LEYENDA: " << Blue <<"INICIO"<< Green <<" DESTINO" << Purple <<" RUTA\n" << White;
   return 0;
 }
-

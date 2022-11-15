@@ -35,7 +35,6 @@
 #define GREEN_GRND "\033[1;42m"
 #define MAGENT_GRND "\033[1;45m"
 #define RESET "\033[0m"
-#define BLUE_GRND "\033[1;44m"
 
 
 /**

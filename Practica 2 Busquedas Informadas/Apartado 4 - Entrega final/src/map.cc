@@ -156,7 +156,7 @@ double Map::Heuristic(size_t i, size_t j) {
     cost = std::abs(aux1) + std::abs(aux2);
   }
   if (heuristic_option_ == 2) {
-    cost = sqrt(((map_[i]->getI() - map_[j]->getI()) * (map_[i]->getI() - map_[j]->getI())) + ((map_[i]->getJ() - map_[j]->getJ()) * (map_[i]->getJ() - map_[j]->getJ())));
+    cost = sqrt(((map_[i]->getI() - map_[j]->getI()) * (map_[i]->getI() - map_[j]->getI())) + ((map_[i]->getJ() - map_[j]->getJ())*(map_[i]->getJ() - map_[j]->getJ())));
   }
   return cost;
 }
