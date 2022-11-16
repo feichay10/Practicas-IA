@@ -9,7 +9,7 @@
  * @file map.h
  * @authors Cheuk Kelly Ng Pante (alu0101364544@ull.edu.es)
  *          Samuel Martín Morales (alu0101359526@ull.edu.es)
- * @brief
+ * @brief This file contains the implementation of the map class.
  * @version 0.1
  * @date 2022-10-29
  *
