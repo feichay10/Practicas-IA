@@ -108,7 +108,7 @@ void Map::setHeuristicFlag(int heuristic_option) {
 size_t Map::getM() const { return M_; };
 
 /**
- * @brief This method returns the number of columns of the map.
+ * @brief This method returns the number of columns of the map.er
  * 
  * @return size_t 
  */

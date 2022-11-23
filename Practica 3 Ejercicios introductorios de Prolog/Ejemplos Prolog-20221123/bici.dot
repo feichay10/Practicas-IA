@@ -1,0 +1,56 @@
+##"Bici y sus partes"
+
+##Command to get the layout: "dot -Tpng bici.dot > bici.png"
+
+
+graph "Bici"
+   {
+#   node [fontsize=10,width=".2", height=".2", margin=0];
+#   graph[fontsize=8];
+   label="Bici y sus partes"
+
+   bici ;
+   bici [label="bici"] ;
+   bici -- rueda1 ;
+   bici -- rueda2 ;
+   bici -- cuadro ;
+   rueda1 [label="rueda"] ;
+   rueda1 -- llanta1 ;
+   rueda1 -- neumatico1 ;
+   rueda1 -- eje1 ;
+   rueda2 [label="rueda"] ;
+   rueda2 -- llanta2 ;
+   rueda2 -- neumatico2 ;
+   rueda2 -- eje2 ;
+   llanta1 [label="llanta"] ;
+   llanta2 [label="llanta"] ;
+   neumatico1 [label="neumatico"] ;
+   neumatico1 -- camara1 ;
+   neumatico1 -- cubierta1 ;
+   neumatico2 [label="neumatico"] ;
+   neumatico2 -- camara2 ;
+   neumatico2 -- cubierta2 ;
+   eje1 [label="eje"] ;
+   eje2 [label="eje"] ;
+   camara1 [label="camara"] ;
+   camara2 [label="camara"] ;
+   cubierta1 [label="cubierta"] ;
+   cubierta2 [label="cubierta"] ;
+   cuadro [label="cuadro"] ;
+   cuadro -- direccion;
+   cuadro -- sillin;
+   cuadro -- tubos;
+   cuadro -- grupos;
+   direccion [label="direccion"] ;
+   direccion -- manillar;
+   direccion -- horquilla;
+   sillin [label="sillin"] ;
+   tubos [label="tubos"] ;
+   grupos [label="grupos"] ;
+   grupos -- frenos;
+   grupos -- cambios;
+   cambios [label="cambios"] ;
+   cambios -- cambiador;
+   cambios -- pinones;
+   cambios -- platos;
+   }
