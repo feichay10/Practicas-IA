@@ -10,4 +10,7 @@
 
 % Ejercicio 3: Realizar los predicados 'mcm/3' y 'mcd/3' que devuelva en el primer argumento el mínimo 
 % común múltiplo y el máximo común divisor respectivamente de los dos últimos argumentos. Por ejemplo, 
-% mcm(X, 2, 5) habría de devolver X=10.
+% mcm(X, 2, 5) habría de devolver X=10 y mcd(X, 2, 5) habría de devolver X=1.
+
+mcm(X, A, B) :- X is (A*B) / gcd(A, B).
+mcd(X, A, B) :- X is gcd(A, B).
