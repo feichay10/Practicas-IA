@@ -11,3 +11,5 @@
 % primer argumento, que estén dentro de un intervalo determinado por el límite inferior, entero del segundo 
 % argumento, y el límite superior, entero del tercer argumento. Por ejemplo, generado_int(X, 2, 5) habría 
 % de devolver X=2; X=3; X=4; X=5.
+
+generado_int(X, LimInf, LimSup) :- LimInf =< LimSup, between(LimInf, LimSup, N), X is N.
