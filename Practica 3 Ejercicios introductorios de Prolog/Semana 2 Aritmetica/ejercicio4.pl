@@ -15,16 +15,36 @@
 %         ? - dia_semana(31, 12, 2022, X)
 %         X = sabado
 
-dia_semana(Dia, Mes, Anio, DiaSemana) :-
-  % Calcular el día de la semana usando la fórmula de Lewis Carroll
-  DiaSemanaNum is (Anio + Anio//4 - Anio//100 + Anio//400 + (13*Mes + 8)//5 + Dia) mod 7,
-  % Convertir el número del día de la semana a su representación en formato átomo
-  dia_semana_num_a_atomo(DiaSemanaNum, DiaSemana).
+% Meses correspondientes
+mes(1, 0).
+mes(2, 3).
+mes(3, 3).
+mes(4, 6).
+mes(5, 1).
+mes(6, 4).
+mes(7, 6).
+mes(8, 2).
+mes(9, 5).
+mes(10, 0).
+mes(11, 3).
+mes(12, 5).
 
-dia_semana_num_a_atomo(0, domingo).
-dia_semana_num_a_atomo(1, lunes).
-dia_semana_num_a_atomo(2, martes).
-dia_semana_num_a_atomo(3, miercoles).
-dia_semana_num_a_atomo(4, jueves).
-dia_semana_num_a_atomo(5, viernes).
-dia_semana_num_a_atomo(6, sabado).
+% Dia de la semana
+dia(0, domingo).
+dia(1, lunes).
+dia(2, martes).
+dia(3, miercoles).
+dia(4, jueves).
+dia(5, viernes).
+dia(6, sabado).
+
+% Calculo del dia de la semana
+dia_semana(Dia, Mes, Anio, DiaSemana) :-
+    mes(Mes, MesNum),
+    AnioNum is Anio - 1900,
+    AnioNum2 is AnioNum // 4,
+    AnioNum3 is AnioNum2 + AnioNum,
+    AnioNum4 is AnioNum3 + Dia,
+    AnioNum5 is AnioNum4 + MesNum,
+    AnioNum6 is AnioNum5 mod 7,
+    dia(AnioNum6, DiaSemana).
