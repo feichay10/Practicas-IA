@@ -11,11 +11,13 @@
 % donde se han eliminado todos su anidamientos. Por ejemplo, aplana([a, b, [c, [d], [], e], f], L) 
 % debe dar L = [a, b, c, d, e, f].
 
-insertar(X,[X|L], L).
-insertar(X,L2, L):- L2 = [X|L].
-insertar(X, L1,L2):- append(L1,[X],L2).
-aplana_aux([],[], []).
-aplana_aux(A,L2, L3):- not(is_list(A)), insertar(A,L2,L3).
-aplana_aux([A|_],L2,L3):- is_list(A), aplana_aux(A,L2, L3).
-aplana([],_).
-aplana([A|L1], L2):- aplana_aux(A,[],L2), aplana(L1,L2).
+% Resolución:
+
+aplana([],[]).
+aplana([H|T],L):-
+    is_list(H),
+    aplana(H,L1),
+    aplana(T,L2),
+    append(L1,L2,L).
+aplana([H|T],[H|L]):-
+    aplana(T,L).
