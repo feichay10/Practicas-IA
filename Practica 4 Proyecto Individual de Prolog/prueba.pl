@@ -7,20 +7,20 @@
 %-Facts-
 
 %Musical Keys
-key(a_major, joyful, ).
-key(a_minor, melancolic, ).
-key(b_major, strong, ).
-key(b_minor, solitary, ).
-key(c_major, happy, ). 
-key(c_minor, sad, ). 
-key(d_major, euphoric, ). 
-key(d_minor, worried, ). 
-key(e_major, powered, ).
-key(e_minor, melancholic, ). 
-key(f_major, relax, ). 
-key(f_minor, depressive, ).
-key(g_major, calm, ). 
-key(g_minor, unhappy, ). 
+key(a_major, joyful).
+key(a_minor, melancholic).
+key(b_major, strong).
+key(b_minor, solitary).
+key(c_major, happy). 
+key(c_minor, sad). 
+key(d_major, euphoric). 
+key(d_minor, worried). 
+key(e_major, powered).
+key(e_minor, melancholic). 
+key(f_major, relax). 
+key(f_minor, depressive).
+key(g_major, calm). 
+key(g_minor, unhappy). 
 
 %Note that sharp and flat keys haven't been added yet
 

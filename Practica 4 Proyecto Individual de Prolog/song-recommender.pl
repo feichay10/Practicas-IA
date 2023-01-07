@@ -26,7 +26,7 @@ key(e_minor, melancholic).
 key(f_major, relax). 
 key(f_minor, depressive).
 key(g_major, calm). 
-key(g_minor, unhappy). 
+key(g_minor, unhappy).
 
 % Generos de musica
 genre(pop, [happy, calm, satisfied, tender]).
@@ -46,7 +46,6 @@ genre(reggaeton, [sad, love_sick, powerful, euphoric, furious, depressive, stron
 genre(metal, [sad, love_sick, powerful, euphoric, furious, depressive, strong, restless]).
 genre(trap, [sad, love_sick, powerful, euphoric, furious, depressive, strong, restless]).
 genre(electronic, [sad, love_sick, powerful, euphoric, furious, depressive, strong, restless]).
-genre(country, [sad, love_sick, powerful, euphoric, furious, depressive, strong, restless]).
 
 % Definimos una base de datos de canciones con información sobre el género, el estilo y el artista
 % song(key, mood, nombre, artista, genero, año)
@@ -356,95 +355,73 @@ song(c_major, happy, 'Dile Que Tu Me Quieres', 'Ozuna', 'Reggaeton', 2018).
 song(a_minor, melancolic, 'Me acostumbre', 'Bad Bunny, Arcangel', 'Reggaeton', 2017).
 song(d_minor, worried, 'Caviar', 'Lenny Tavarez', 'Reggaeton', 2017).
 song(e_minor, melancholic, 'Khalifa', 'Alex Rose, Almighty', 'Reggaeton', 2019).
-song('El Farsante', 'Ozuna', 'Reggaeton', 2017).
+song(f_major, relax, 'El Farsante', 'Ozuna', 'Reggaeton', 2017).
 
 % Metal
-song('Stairway to Heaven', 'Led Zeppelin', 'Metal', 1971).
-song('Master of Puppets', 'Metallica', 'Metal', 1986).
-song('One', 'Metallica', 'Metal', 1988).
-song('Paradise City', 'Guns N Roses', 'Metal', 1988).
-song('Sweet Child O Mine', 'Guns N Roses', 'Metal', 1987).
-song('Enter Sandman', 'Metallica', 'Metal', 1991).
-song('Crazy Train', 'Ozzy Osbourne', 'Metal', 1980).
-song('Iron Man', 'Black Sabbath', 'Metal', 1970).
-song('Black Hole Sun', 'Soundgarden', 'Metal', 1994).
-song('November Rain', 'Guns N Roses', 'Metal', 1992).
-song('Numb', 'Linkin Park', 'Metal', 2003).
-song('In the End', 'Linkin Park', 'Metal', 2000).
-song('The Unforgiven', 'Metallica', 'Metal', 1991).
-song('Thunderstruck', 'AC/DC', 'Metal', 1990).
-song('Run to the Hills', 'Iron Maiden', 'Metal', 1982).
-song('Hallowed Be Thy Name', 'Iron Maiden', 'Metal', 1982).
-song('Breaking the Law', 'Judas Priest', 'Metal', 1980).
-song('Painkiller', 'Judas Priest', 'Metal', 1990).
-song('Hells Bells', 'AC/DC', 'Metal', 1980).
-song('Children of the Grave', 'Black Sabbath', 'Metal', 1971).
+song(a_minor, melancolic, 'Stairway to Heaven', 'Led Zeppelin', 'Metal', 1971).
+song(e_minor, melancholic, 'Master of Puppets', 'Metallica', 'Metal', 1986).
+song(g_major, calm, 'One', 'Metallica', 'Metal', 1988).
+song(b_major, strong, 'Paradise City', 'Guns N Roses', 'Metal', 1988).
+song(f_major, relax, 'Sweet Child O Mine', 'Guns N Roses', 'Metal', 1987).
+song(f_minor, depressive, 'Enter Sandman', 'Metallica', 'Metal', 1991).
+song(a_major, joyful, 'Crazy Train', 'Ozzy Osbourne', 'Metal', 1980).
+song(a_major, joyful, 'Iron Man', 'Black Sabbath', 'Metal', 1970).
+song(f_major, relax, 'Black Hole Sun', 'Soundgarden', 'Metal', 1994).
+song(b_major, strong, 'November Rain', 'Guns N Roses', 'Metal', 1992).
+song(a_major, joyful, 'Numb', 'Linkin Park', 'Metal', 2003).
+song(d_minor, worried, 'In the End', 'Linkin Park', 'Metal', 2000).
+song(g_major, calm, 'The Unforgiven', 'Metallica', 'Metal', 1991).
+song(e_major, powered, 'Thunderstruck', 'AC/DC', 'Metal', 1990).
+song(c_major, happy, 'Run to the Hills', 'Iron Maiden', 'Metal', 1982).
+song(c_major, happy, 'Hallowed Be Thy Name', 'Iron Maiden', 'Metal', 1982).
+song(d_major, euphoric, 'Breaking the Law', 'Judas Priest', 'Metal', 1980).
+song(c_minor, sad, 'Painkiller', 'Judas Priest', 'Metal', 1990).
+song(e_minor, melancholic, 'Hells Bells', 'AC/DC', 'Metal', 1980).
+song(f_major, relax, 'Children of the Grave', 'Black Sabbath', 'Metal', 1971).
 
 % Trap
-song('Si la Calle Llama', 'Eladio Carrion', 'Trap', 2022).
-song('Llegamos', 'Quevedo', 'Trap', 2020).
-song('Eladio Carrion: Bzrp Music Session', 'Eladio Carrion, Bizarrap', 'Trap', 2021).
-song('Habla Claro', 'Eladio Carrion, Morad', 'Trap', 2021).
-song('I Get the Bag', 'Gucci Mane', 'Trap', 2017).
-song('Tootsie Slide', 'Drake', 'Trap', 2020).
-song('Mo Bamba', 'Sheck Wes', 'Trap', 2018).
-song('Kod', 'J. Cole', 'Trap', 2018).
-song('One Dance', 'Drake', 'Trap', 2016).
-song('Black Beatles', 'Rae Sremmurd', 'Trap', 2016).
-song('Dolce', 'Munic HB', 'Trap', 2021).
-song('Kemba Walker', 'Eladio Carrion, Bad Bunny', 'Trap', 2020).
-song('Suge', 'DaBaby', 'Trap', 2019).
-song('Best Life', 'Cardi B', 'Trap', 2018).
-song('Thotiana', 'Blueface', 'Trap', 2018).
-song('Money Longer', 'Lil Uzi Vert', 'Trap', 2016).
-song('GIVENCHY', 'Duki', 'Trap', 2022).
-song('MIA', 'Bad Bunny', 'Trap', 2019).
-song('Mbappe', 'Eladio Carrion', 'Trap', 2022).
-song('Dos Mil 16', 'Bad Bunny', 'Trap', 2022).
+song(a_minor, melancolic, 'Si la Calle Llama', 'Eladio Carrion', 'Trap', 2022).
+song(g_major, calm, 'Llegamos', 'Quevedo', 'Trap', 2020).
+song(e_major, powered, 'Eladio Carrion: Bzrp Music Session', 'Eladio Carrion, Bizarrap', 'Trap', 2021).
+song(e_major, powered, 'Habla Claro', 'Eladio Carrion, Morad', 'Trap', 2021).
+song(b_major, strong, 'I Get the Bag', 'Gucci Mane, Migos', 'Trap', 2017).
+song(c_minor, sad, 'Tootsie Slide', 'Drake', 'Trap', 2020).
+song(e_major, powered, 'Mo Bamba', 'Sheck Wes', 'Trap', 2018).
+song(c_major, happy, 'Kod', 'J. Cole', 'Trap', 2018).
+song(c_major, happy, 'One Dance', 'Drake', 'Trap', 2016).
+song(c_major, happy, 'Black Beatles', 'Rae Sremmurd, Gucci Mane', 'Trap', 2016).
+song(e_minor, melancholic, 'Dolce', 'Munic HB', 'Trap', 2021).
+song(g_minor, unhappy, 'Kemba Walker', 'Eladio Carrion, Bad Bunny', 'Trap', 2020).
+song(d_minor, worried, 'Suge', 'DaBaby', 'Trap', 2019).
+song(a_major, joyful, 'Best Life', 'Cardi B', 'Trap', 2018).
+song(a_minor, melancolic, 'Thotiana', 'Blueface', 'Trap', 2018).
+song(f_minor, depressive, 'Money Longer', 'Lil Uzi Vert', 'Trap', 2016).
+song(g_major, calm, 'GIVENCHY', 'Duki', 'Trap', 2022).
+song(f_minor, depressive, 'MIA', 'Bad Bunny, Drake', 'Trap', 2019).
+song(g_major, calm, 'Mbappe', 'Eladio Carrion', 'Trap', 2022).
+song(c_major, happy, 'Dos Mil 16', 'Bad Bunny', 'Trap', 2022).
 
 % Electronic
-song('Adrenaline Rush', 'Tiesto', 'Electronic', 2010).
-song('Levels', 'Avicii', 'Electronic', 2011).
-song('Silent Shout', 'The Knife', 'Electronic', 2006).
-song('We Are Your Friends', 'Justice', 'Electronic', 2007).
-song('The Veldt', 'Deadmau5', 'Electronic', 2012).
-song('Satisfied Show', 'Daft Punk', 'Electronic', 2010).
-song('The Middle', 'Zedd', 'Electronic', 2018).
-song('Shelter', 'Porter Robinson', 'Electronic', 2016).
-song('No One Knows', 'The Chemical Brothers', 'Electronic', 2002).
-song('Body Language', 'M.I.A.', 'Electronic', 2005).
-song('Satisfied Show', 'Daft Punk', 'Electronic', 2010).
-song('The Middle', 'Zedd', 'Electronic', 2018).
-song('Shelter', 'Porter Robinson', 'Electronic', 2016).
-song('No One Knows', 'The Chemical Brothers', 'Electronic', 2002).
-song('Body Language', 'M.I.A.', 'Electronic', 2005).
-song('Strobe', 'Deadmau5', 'Electronic', 2010).
-song('Adrenaline Rush', 'Tiesto', 'Electronic', 2010).
-song('Levels', 'Avicii', 'Electronic', 2011).
-song('Silent Shout', 'The Knife', 'Electronic', 2006).
-song('We Are Your Friends', 'Justice', 'Electronic', 2007).
-
-% Country
-song('Remember You Young', 'Thomas Rhett', 'Country', 2019).
-song('I Hope', 'Gabby Barrett', 'Country', 2020).
-song('One Margarita', 'Luke Bryan', 'Country', 2020).
-song('The Bones', 'Maren Morris', 'Country', 2019).
-song('Good as You', 'Kane Brown', 'Country', 2018).
-song('10,000 Hours', 'Dan + Shay', 'Country', 2019).
-song('Die from a Broken Heart', ' Maddie & Tae', 'Country', 2019).
-song('Bluebird', 'Miranda Lambert', 'Country', 2020).
-song('Drunk Me', 'Mitchell Tenpenny', 'Country', 2018).
-song('Settling Down', 'Miranda Lambert', 'Country', 2020).
-song('Remember You Young', 'Thomas Rhett', 'Country', 2019).
-song('I Hope', 'Gabby Barrett', 'Country', 2020).
-song('One Margarita', 'Luke Bryan', 'Country', 2020).
-song('The Bones', 'Maren Morris', 'Country', 2019).
-song('Good as You', 'Kane Brown', 'Country', 2018).
-song('10,000 Hours', 'Dan + Shay', 'Country', 2019).
-song('Die from a Broken Heart', ' Maddie & Tae', 'Country', 2019).
-song('Bluebird', 'Miranda Lambert', 'Country', 2020).
-song('Drunk Me', 'Mitchell Tenpenny', 'Country', 2018).
-song('Settling Down', 'Miranda Lambert', 'Country', 2020).
+song(e_major, powered, 'Pieces', 'AVAION', 'Electronic', 2019).
+song(c_minor, sad, 'Levels', 'Avicii', 'Electronic', 2011).
+song(d_major, euphoric, 'Silent Shout', 'The Knife', 'Electronic', 2006).
+song(a_minor, melancolic, 'We Are Your Friends', 'Justice', 'Electronic', 2007).
+song(a_major, joyful, 'The Veldt', 'Deadmau5', 'Electronic', 2012).
+song(c_major, happy, 'Satisfied', 'Showtek, VASSY', 'Electronic', 2015).
+song(g_major, calm, 'The Middle', 'Zedd, Maren Morris, Grey', 'Electronic', 2018).
+song(c_major, happy, 'Shelter', 'Porter Robinson, Madeon', 'Electronic', 2016).
+song(e_minor, melancholic, 'Summer', 'Calvin Harris', 'Electronic', 2014).
+song(d_major, euphoric, 'BBY', 'Two Feet', 'Electronic', 2020).
+song(c_major, happy, 'Fuel to the Fire', 'Rationale', 'Electronic', 2017).
+song(d_minor, worried, 'No Diggity', 'Chet Faker', 'Electronic', 2012).
+song(a_major, joyful, 'Holy Mind', 'Hippie Sabotage', 'Electronic', 2017).
+song(e_minor, melancholic, 'Higher', 'Lemaitre, Maty Noyes', 'Electronic', 2017).
+song(a_minor, melancolic, 'You & Me - Flume Remix', 'Disclosure, Eliza Doolittle, Flume', 'Electronic', 2005).
+song(g_major, calm, 'Limo', 'Two Feet', 'Electronic', 2022).
+song(g_minor, unhappy, 'Often - Kygo Remix', 'The Weeknd, Kygo', 'Electronic', 2018).
+song(a_major, joyful, 'Caviar', 'Two Feet', 'Electronic', 2022).
+song(e_minor, melancholic, 'Where Are Ü Now', 'Jack Ü, Skrillex, Diplo, Justin Bieber', 'Electronic', 2015).
+song(a_minor, melancolic, 'Rise Up', 'TheFatRat', 'Electronic', 2019).
 
 % % Preguntas al usuario sobre sus preferencias musicales
 % pregunta_genero :-
