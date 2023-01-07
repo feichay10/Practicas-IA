@@ -14,7 +14,7 @@
 
 % Key del tipo de songes
 key(a_major, joyful).
-key(a_minor, melancolic).
+key(a_minor, melancholic).
 key(b_major, strong).
 key(b_minor, solitary).
 key(c_major, happy). 
@@ -75,7 +75,7 @@ song(a_major, joyful,'Boom Boom Pow', 'Black Eyed Peas', 'Pop', 2009).
 
 % Rock
 song(f_minor, depressive, 'Highway To Hell', 'AC/DC', 'Rock', 1979).
-song(a_minor, melancolic, 'Stairway To Heaven', 'Led Zeppelin', 'Rock', 1971).
+song(a_minor, melancholic, 'Stairway To Heaven', 'Led Zeppelin', 'Rock', 1971).
 song(d_major, euphoric, 'Hotel California', 'Eagles', 'Rock', 1976).
 song(c_minor, sad, 'Bohemian Rhapsody', 'Queen', 'Rock', 1975).
 song(c_major, happy, 'Smoke On The Water', 'Deep Purple', 'Rock', 1972).
@@ -88,7 +88,7 @@ song(e_minor, melancholic, 'Nothing Else Matters', 'Metallica', 'Rock', 1991).
 song(a_major, joyful, 'Back In Black', 'AC/DC', 'Rock', 1980).
 song(e_major, powered, 'Thunderstruck', 'AC/DC', 'Rock', 1990).
 song(f_minor, depressive, 'Highway To Hell', 'AC/DC', 'Rock', 1979).
-song(a_minor, melancolic, 'Stairway To Heaven', 'Led Zeppelin', 'Rock', 1971).
+song(a_minor, melancholic, 'Stairway To Heaven', 'Led Zeppelin', 'Rock', 1971).
 song(d_major, euphoric, 'Hotel California', 'Eagles', 'Rock', 1976).
 song(c_major, happy, 'Smoke On The Water', 'Deep Purple', 'Rock', 1972).
 song(f_major, relax, 'Sweet Child O Mine', 'Guns N Roses', 'Rock', 1987).
@@ -101,13 +101,13 @@ song(d_minor, worried, 'Beat It', 'Michael Jackson', 'dance', 1980).
 song(b_major, strong, 'Thriller', 'Michael Jackson', 'dance', 1980).
 song(g_major, calm, 'Holiday', 'Madonna', 'dance', 1980).
 song(d_minor, worried, 'Like a Virgin', 'Madonna', 'dance', 1980).
-song(a_minor, melancolic, 'Into the Groove', 'Madonna', 'dance', 1980).
+song(a_minor, melancholic, 'Into the Groove', 'Madonna', 'dance', 1980).
 song(f_major, relax, 'Vogue', 'Madonna', 'dance', 1990).
-song(a_minor, melancolic, 'Pump Up the Jam', 'Technotronic', 'dance', 1990).
+song(a_minor, melancholic, 'Pump Up the Jam', 'Technotronic', 'dance', 1990).
 song(c_minor, sad, 'Levels', 'Avicii', 'dance', 2010).
 song(g_minor, unhappy, 'Strobe', 'Deadmau5', 'dance', 2010).
 song(f_minor, depressive, 'Levels', 'Nick Jonas', 'dance', 2010).
-song(a_minor, melancolic, 'This Is What You Came For', 'Calvin Harris ft. Rihanna', 'dance', 2010).
+song(a_minor, melancholic, 'This Is What You Came For', 'Calvin Harris ft. Rihanna', 'dance', 2010).
 song(c_minor, sad, "Titanium", "David Guetta ft. Sia", "dance", 2010).
 song(d_major, euphoric, "Wake Me Up", "Avicii", "dance", 2010).
 song(f_major, relax, "Lonely Together", "Avicii ft. Rita Ora", "dance", 2010).
@@ -117,93 +117,92 @@ song(c_minor, sad, "Sweet Dreams (Are Made of This)", "Eurythmics", "dance", 198
 song(c_major, happy, "I Wanna Dance with Somebody (Who Loves Me)", "Whitney Houston", "dance", 1980).
 
 % Techno
-song('Analogital', 'Len Faki', 'Techno', 2010).
-song('Coda', 'Adam Beyer', 'Techno', 2011).
-song('Into The Light', 'Chris Liebing', 'Techno', 2012).
-song('I Am Your Mind', 'Pete Tong', 'Techno', 2013).
-song('Echoes', 'Deadmau5', 'Techno', 2014).
-song('Robot Heart', 'Sasha', 'Techno', 2015).
-song('Strobe', 'Disclosure', 'Techno', 2016).
-song('Awaken', 'Jamie Jones', 'Techno', 2017).
-song('Beyond', 'Nic Fanciulli', 'Techno', 2018).
-song('Collider', 'Carl Cox', 'Techno', 2019).
-song('The Bends', 'Tame Impala', 'Techno', 2020).
-song('Beacon', 'David Guetta', 'Techno', 2010).
-song('Rapture', 'Armin van Buuren', 'Techno', 2011).
-song('Insomnia', 'Faithless', 'Techno', 2012).
-song('Levels', 'Avicii', 'Techno', 2013).
-song('Adrenaline Rush', 'Tiësto', 'Techno', 2014).
-song('Go', 'The Chemical Brothers', 'Techno', 2015).
-song('Stronger', 'Hardwell', 'Techno', 2016).
-song('Satisfied', 'Showtek', 'Techno', 2017).
-song('Freed From Desire', 'Galantis', 'Techno', 2018).
-song('Rock Your Body', 'Justin Timberlake', 'Techno', 2019).
+song(b_major, strong, 'Coda', 'Adam Beyer', 'Techno', 2011).
+song(d_major, euphoric, 'One (Your Name)', 'Swedish House Mafia', 'Techno', 2010).
+song(d_major, euphoric, 'Hello', 'Martin Solveig, Dragonette', 'Techno', 2010).
+song(f_minor, depressive, 'Ghosts n Stuff', 'Deadmau5, Rob Swire', 'Techno', 2009).
+song(c_major, happy, 'We Found Love', 'Rihanna, Calvin Harris', 'Techno', 2011).
+song(c_major, happy, 'Rock n Roll', 'Skrillex', 'Techno', 2011).
+song(g_major, calm, 'She wolf', 'David Guetta, Sia', 'Techno', 2012).
+song(c_major, happy, 'Latch', 'Disclosure ft. Sam Smith', 'Techno', 2012).
+song(d_major, euphoric, 'Dont You Worry Child', 'Swedish House Mafia', 'Techno', 2012).
+song(g_minor, unhappy, 'Sweet Nothing', 'Calvin Harris ft. Florence Welch', 'Techno', 2012).
+song(b_major, strong, 'Spaceman', 'Hardwell', 'Techno', 2012).
+song(g_major, calm, 'Make It Bun Dem', 'Skrillex, Damian Marley', 'Techno', 2012).
+song(g_major, calm, 'Turn Me On', 'David Guetta, Nicki Minaj', 'Techno', 2012).
+song(c_minor, sad, 'Levels', 'Avicii', 'Techno', 2013).
+song(d_major, euphoric, 'Wake Me Up', 'Avicii', 'Techno', 2013).
+song(e_minor, melancholic, 'Tsunami', 'DVBBS & Borgeous', 'Techno', 2013).
+song(c_major, happy, 'Animals', 'Martin Garrix', 'Techno', 2013).
+song(d_major, euphoric, 'Alone', 'Marshmello', 'Techno', 2016).
+song(e_minor, melancholic, 'In The Name Of Love', 'Martin Garrix, Bebe Rexha', 'Techno', 2016).
+song(e_major, powered, 'Silence', 'Marshmello, Khalid', 'Techno', 2017).
 
 % Rap 
-song('The Box', 'Roddy Ricch', 'Rap', 2020).
-song('Savage', 'Megan Thee Stallion', 'Rap', 2020).
-song('WAP', 'Cardi B', 'Rap', 2020).
-song('Rockstar', 'DaBaby', 'Rap', 2020).
-song('Toosie Slide', 'Drake', 'Rap', 2020).
-song('Life Is Good', 'Future', 'Rap', 2020).
-song('Suge', 'DaBaby', 'Rap', 2020).
-song('Lose Yourself', 'Eminem', 'Rap', 2002).
-song('Hotline Bling', 'Drake', 'Rap', 2015).
-song('Gooba', '6ix9ine', 'Rap', 2020).
-song('Money Longer', 'Lil Uzi Vert', 'Rap', 2016).
-song('Mo City Don', 'Z-Ro', 'Rap', 2005).
-song('Roses', 'SAINt JHN', 'Rap', 2020).
-song('The London', 'Young Thug', 'Rap', 2020).
-song('No Role Modelz', 'J. Cole', 'Rap', 2014).
-song('No Hands', 'Waka Flocka Flame', 'Rap', 2010).
-song('No Problem', 'Chance The Rapper', 'Rap', 2016).
-song('No Stylist', 'French Montana', 'Rap', 2016).
-song('SICKO MODE', 'Travis Scott', 'Rap', 2018).
-song('Mood', '24kGoldn', 'Rap', 2020).
+song(a_minor, melancholic, 'The Box', 'Roddy Ricch', 'Rap', 2020).
+song(b_major, strong, 'Savage', 'Megan Thee Stallion', 'Rap', 2020).
+song(c_major, happy, 'WAP', 'Cardi B, Megan Thee Stallion', 'Rap', 2020).
+song(b_major, strong, 'Rockstar', 'DaBaby ft. Roddy Rich', 'Rap', 2020).
+song(c_minor, sad, 'Toosie Slide', 'Drake', 'Rap', 2020).
+song(d_minor, worried, 'Life Is Good', 'Future ft. Drake', 'Rap', 2020).
+song(d_minor, worried, 'Suge', 'DaBaby', 'Rap', 2020).
+song(d_major, euphoric, 'Lose Yourself', 'Eminem', 'Rap', 2002).
+song(d_major, euphoric, 'Hotline Bling', 'Drake', 'Rap', 2015).
+song(c_major, happy, 'Gooba', '6ix9ine', 'Rap', 2020).
+song(f_minor, depressive, 'Money Longer', 'Lil Uzi Vert', 'Rap', 2016).
+song(f_major, relax, 'Mo City Don', 'Z-Ro', 'Rap', 2005).
+song(g_major, calm, 'Roses', 'SAINt JHN', 'Rap', 2020).
+song(e_minor, melancholic, 'The London', 'Young Thug ft. J. Cole & Travis Scott', 'Rap', 2020).
+song(a_minor, melancholic, 'No Role Modelz', 'J. Cole', 'Rap', 2014).
+song(c_major, happy, 'No Hands', 'Waka Flocka Flame', 'Rap', 2010).
+song(b_minor, solitary, 'No Problem', 'Chance The Rapper ft. Lil Wayne, 2 Chainz', 'Rap', 2016).
+song(f_minor, depressive, 'No Stylist', 'French Montana ft. Drake', 'Rap', 2016).
+song(g_major, calm, 'SICKO MODE', 'Travis Scott', 'Rap', 2018).
+song(g_minor, unhappy, 'Mood', '24kGoldn ft. iann dior', 'Rap', 2020).
 
 % Hip-Hop
-song('Hotline Bling', 'Drake', 'Hip-hop', 2015)
-song('All the Way Up', 'Fat Joe', 'Hip-hop', 2016)
-song('Bodak Yellow', 'Cardi B', 'Hip-hop', 2017)
-song('God s Plan', 'Drake', 'Hip-hop', 2018)
-song('Nonstop', 'Drake', 'Hip-hop', 2018)
-song('Old Town Road', 'Lil Nas X', 'Hip-hop', 2019)
-song('Racks in the Middle', 'Nipsey Hussle', 'Hip-hop', 2019)
-song('Money Longer', 'Lil Uzi Vert', 'Hip-hop', 2016)
-song('Humble', 'Kendrick Lamar', 'Hip-hop', 2017)
-song('SICKO MODE', 'Travis Scott', 'Hip-hop', 2018)
-song('Psycho', 'Post Malone', 'Hip-hop', 2018)
-song('Thug Life', 'J. Cole', 'Hip-hop', 2020)
-song('Death Bed (Coffee for Your Head)', 'Powfu', 'Hip-hop', 2020)
-song('Death Race for Love', 'Juice WRLD', 'Hip-hop', 2019)
-song('The London', 'Young Thug', 'Hip-hop', 2020)
-song('Nonchalant', '6LACK', 'Hip-hop', 2018)
-song('Heir to the Throne', 'DaBaby', 'Hip-hop', 2019)
-song('Good Days', 'SZA', 'Hip-hop', 2021)
-song('The Bigger Picture', 'Lil Baby', 'Hip-hop', 2020)
-song('Laugh Now Cry Later', 'Drake', 'Hip-hop', 2020)
+song(d_major, euphoric, 'Hotline Bling', 'Drake', 'Hip-hop', 2015)
+song(a_minor, melancolic, 'All the Way Up', 'Fat Joe', 'Hip-hop', 2016)
+song(b_minor, solitary, 'Bodak Yellow', 'Cardi B', 'Hip-hop', 2017)
+song(g_major, calm, 'God s Plan', 'Drake', 'Hip-hop', 2018)
+song(g_major, calm, 'Nonstop', 'Drake', 'Hip-hop', 2018)
+song(c_major, happy, 'Old Town Road', 'Lil Nas X', 'Hip-hop', 2019)
+song(f_minor, depressive, 'Racks in the Middle', 'Nipsey Hussle ft. Roddy Rich, Hit-Boy', 'Hip-hop', 2019)
+song(f_minor, depressive, 'Money Longer', 'Lil Uzi Vert', 'Hip-hop', 2016)
+song(c_minor, sad, 'Humble', 'Kendrick Lamar', 'Hip-hop', 2017)
+song(g_major, calm, 'SICKO MODE', 'Travis Scott', 'Hip-hop', 2018)
+song(g_major, calm, 'Psycho', 'Post Malone', 'Hip-hop', 2018)
+song(d_major, euphoric, 'Work Out', 'J. Cole', 'Hip-hop', 2020)
+song(g_minor, unhappy, 'Death Bed (Coffee for Your Head)', 'Powfu', 'Hip-hop', 2020)
+song(d_minor, worried, 'The Zone', 'The Weeknd, Drake', 'Hip-hop', 2012)
+song(e_minor, melancholic, 'The London', 'Young Thug ft. J. Cole & Travis Scott', 'Hip-hop', 2020)
+song(d_minor, worried, 'Black And Yellow [G-Mix]', 'Wiz Khalifa ft. Snoop Dog, Juicy J & T-Pain', 'Hip-hop', 2011)
+song(d_major, euphoric, 'Roof', 'DaBaby', 'Hip-hop', 2021)
+song(c_minor, sad, 'Good Days', 'SZA', 'Hip-hop', 2021)
+song(c_major, happy, 'The Bigger Picture', 'Lil Baby', 'Hip-hop', 2020)
+song(c_major, happy, 'Laugh Now Cry Later', 'Drake', 'Hip-hop', 2020)
 
 % RnB
-song('Moises', 'Choclock', 'RnB', 2020).
-song('Dolores', 'Choclock', 'RnB', 2019).
-song('Facil', 'Choclock', 'RnB', 2017).
-song('Cigarro', 'Choclock', 'RnB', 2019).
-song('Arena Negra', 'Choclock', 'RnB', 2021).
-song('Enhorabuena', 'Choclock', 'RnB', 2021).
-song('Earned It', 'The Weeknd', 'RnB', 2015).
-song('Pray You Catch Me', 'Beyonce', 'RnB', 2016).
-song('Sorry', 'Justin Bieber', 'RnB', 2015).
-song('Se Puso Bueno', 'Choclock', 'RnB', 2022).
-song('Malvasia', 'Choclock', 'RnB', 2022).
-song('Face Time', 'Choclock', 'RnB', 2022).
-song('Agridulce', 'Choclock', 'RnB', 2022).
-song('En Bajo Perfil', 'Cruz Cafune', 'RnB', 2020).
-song('Doble Tick Azul', 'Cruz Cafune', 'RnB', 2020).
-song('Until Morning - A COLORS SHOW', 'James Vickery', 'RnB', 2018).
-song('HODL On', 'Dennis Lloyd', 'RnB', 2020).
-song('a la mierda', 'Svarez ft. Bejo', 'RnB', 2022).
-song('Una Bala Con Mi Nombre', 'Abhir Hathi', 'RnB', 2022).
-song('Pibas, Sol y Hierba', 'Dawaira', 'RnB', 2020).
+song(f_major, relax, 'Moises', 'Choclock', 'RnB', 2020).
+song(g_major, calm, 'Dolores', 'Choclock', 'RnB', 2019).
+song(d_minor, worried, 'Facil', 'Choclock', 'RnB', 2017).
+song(g_major, calm, 'Cigarro', 'Choclock', 'RnB', 2019).
+song(a_major, joyful, 'Arena Negra', 'Choclock', 'RnB', 2021).
+song(g_major, calm, 'Enhorabuena', 'Choclock ft. Dawaira', 'RnB', 2021).
+song(d_minor, worried, 'Earned It', 'The Weeknd', 'RnB', 2015).
+song(g_minor, unhappy, 'Pray You Catch Me', 'Beyonce', 'RnB', 2016).
+song(c_minor, sad, 'Sorry', 'Justin Bieber', 'RnB', 2015).
+song(f_minor, depressive, 'Se Puso Bueno', 'Choclock', 'RnB', 2022).
+song(f_major, relax, 'Malvasia', 'Choclock ft. Chita', 'RnB', 2022).
+song(a_major, joyful, 'Face Time', 'Choclock', 'RnB', 2022).
+song(c_minor, sad, 'Agridulce', 'Choclock', 'RnB', 2022).
+song(b_minor, solitary, 'En Bajo Perfil', 'Cruz Cafune', 'RnB', 2020).
+song(a_minor, melancolic, 'Doble Tick Azul', 'Cruz Cafune', 'RnB', 2020).
+song(c_minor, sad, 'Until Morning - A COLORS SHOW', 'James Vickery', 'RnB', 2018).
+song(g_major, calm, 'HODL On', 'Dennis Lloyd', 'RnB', 2020).
+song(f_minor, depressive, 'a la mierda', 'Svarez ft. Bejo', 'RnB', 2022).
+song(g_minor, unhappy, 'Una Bala Con Mi Nombre', 'Abhir Hathi', 'RnB', 2022).
+song(f_minor, depressive, 'Pibas, Sol y Hierba', 'Dawaira', 'RnB', 2020).
 
 % Soul
 song('Its A Mans, Mans Mans World', 'James Brown & The Famous Flames', 'Soul', 1966).
