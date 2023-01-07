@@ -356,7 +356,7 @@ song(c_major, happy, 'Dile Que Tu Me Quieres', 'Ozuna', 'Reggaeton', 2018).
 song(a_minor, melancolic, 'Me acostumbre', 'Bad Bunny, Arcangel', 'Reggaeton', 2017).
 song(d_minor, worried, 'Caviar', 'Lenny Tavarez', 'Reggaeton', 2017).
 song(e_minor, melancholic, 'Khalifa', 'Alex Rose, Almighty', 'Reggaeton', 2019).
-song(f_major, relax, 'El Farsante', 'Ozuna', 'Reggaeton', 2017).
+song('El Farsante', 'Ozuna', 'Reggaeton', 2017).
 
 % Metal
 song('Stairway to Heaven', 'Led Zeppelin', 'Metal', 1971).
