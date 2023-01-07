@@ -7,22 +7,26 @@
 % Autor: Cheuk Kelly Ng Pante (alu0101364544@ull.edu.es)
 % Fecha: 11/01/2023
 
+% Referecias para la base de datos:
+% 1. musicstax.com
+% 2. https://ledgernote.com/blog/interesting/musical-key-characteristics-emotions/
+% 3. https://open.spotify.com
+
 % Key del tipo de songes
-key(c_major, happy).
-key(c_minor, sad).
-key(c_minor, love_sick).
-key(d_major, euphoric).
-key(d_minor, worried).
-key(e_major, powered).
-key(e_minor, restless).
-key(f_major, furious).
-key(f_minor, depressive).
-key(g_major, calm).
-key(g_minor, unhappy).
 key(a_major, joyful).
-key(a_minor, tender).
+key(a_minor, melancolic).
 key(b_major, strong).
 key(b_minor, solitary).
+key(c_major, happy). 
+key(c_minor, sad). 
+key(d_major, euphoric). 
+key(d_minor, worried). 
+key(e_major, powered).
+key(e_minor, melancholic). 
+key(f_major, relax). 
+key(f_minor, depressive).
+key(g_major, calm). 
+key(g_minor, unhappy). 
 
 % Generos de musica
 genre(pop, [happy, calm, satisfied, tender]).
@@ -45,73 +49,72 @@ genre(electronic, [sad, love_sick, powerful, euphoric, furious, depressive, stro
 genre(country, [sad, love_sick, powerful, euphoric, furious, depressive, strong, restless]).
 
 % Definimos una base de datos de canciones con información sobre el género, el estilo y el artista
-% song(nombre, artista, genero, año)
+% song(key, mood, nombre, artista, genero, año)
 
 % Pop
-song('Dancing With A Stranger', 'Sam Smith', 'Pop', 2019).
-song('Someone You Loved', 'Lewis Capaldi', 'Pop', 2019).
-song('Sunflower', 'Post Malone', 'Pop', 2018).
-song('Happier', 'Marshmello', 'Pop', 2018).
-song('Perfect', 'Ed Sheeran', 'Pop', 2017).
-song('Shape Of You', 'Ed Sheeran', 'Pop', 2017).
-song('Despacito', 'Luis Fonsi', 'Pop', 2017).
-song('Closer', 'The Chainsmokers', 'Pop', 2016).
-song('See You Again', 'Wiz Khalifa', 'Pop', 2015).
-song('Uptown Funk', 'Mark Ronson', 'Pop', 2015).
-song('Happy', 'Pharrell Williams', 'Pop', 2014).
-song('Shake It Off', 'Taylor Swift', 'Pop', 2014).
-song('Roar', 'Katy Perry', 'Pop', 2013).
-song('Call Me Maybe', 'Carly Rae Jepsen', 'Pop', 2012).
-song('Party Rock Anthem', 'LMFAO', 'Pop', 2011).
-song('Just The Way You Are', 'Bruno Mars', 'Pop', 2010).
-song('Love The Way You Lie', 'Eminem', 'Pop', 2010).
-song('Poker Face', 'Lady Gaga', 'Pop', 2009).
-song('Bad Romance', 'Lady Gaga', 'Pop', 2009).
-song('Boom Boom Pow', 'Black Eyed Peas', 'Pop', 2009).
+song(g_major, calm, 'Dancing With A Stranger', 'Sam Smith, Normani', 'Pop', 2019).
+song(c_major, happy, 'Someone You Loved', 'Lewis Capaldi', 'Pop', 2019).
+song(d_major, euphoric, 'Sunflower', 'Post Malone', 'Pop', 2018).
+song(f_major, relax, 'Happier', 'Marshmello, Bastille', 'Pop', 2018).
+song(g_major, calm, 'Perfect', 'Ed Sheeran', 'Pop', 2017).
+song(c_minor, sad, 'Shape Of You', 'Ed Sheeran', 'Pop', 2017).
+song(d_major, euphoric, 'Despacito', 'Luis Fonsi', 'Pop', 2017).
+song(g_major, calm, 'Closer', 'The Chainsmokers ft. Halsey', 'Pop', 2016).
+song(a_major, joyful, 'See You Again', 'Wiz Khalifa ft. Charlie Puth', 'Pop', 2015).
+song(c_major, happy, 'Uptown Funk', 'Mark Ronson ft. Bruno Mars', 'Pop', 2015).
+song(c_major, happy, 'Happy', 'Pharrell Williams', 'Pop', 2014).
+song(g_major, calm, 'Shake It Off', 'Taylor Swift', 'Pop', 2014).
+song(g_minor, unhappy, 'Roar', 'Katy Perry', 'Pop', 2013).
+song(g_major, calm, 'Call Me Maybe', 'Carly Rae Jepsen', 'Pop', 2012).
+song(e_major, powered, 'Party Rock Anthem', 'LMFAO', 'Pop', 2011).
+song(f_major, relax, 'Just The Way You Are', 'Bruno Mars', 'Pop', 2010).
+song(a_major, joyful, 'Love The Way You Lie', 'Eminem, Rihanna', 'Pop', 2010).
+song(e_major, powered, 'Poker Face', 'Lady Gaga', 'Pop', 2009).
+song(c_major, happy, 'Bad Romance', 'Lady Gaga', 'Pop', 2009).
+song(a_major, joyful,'Boom Boom Pow', 'Black Eyed Peas', 'Pop', 2009).
 
 % Rock
-song('Highway To Hell', 'AC/DC', 'Rock', 1979).
-song('Stairway To Heaven', 'Led Zeppelin', 'Rock', 1971).
-song('Hotel California', 'Eagles', 'Rock', 1976).
-song('Bohemian Rhapsody', 'Queen', 'Rock', 1975).
-song('Smoke On The Water', 'Deep Purple', 'Rock', 1972).
-song('Sweet Child O Mine', 'Guns N Roses', 'Rock', 1987).
-song('November Rain', 'Guns N Roses', 'Rock', 1991).
-song('Wonderwall', 'Oasis', 'Rock', 1995).
-song('Paranoid', 'Black Sabbath', 'Rock', 1970).
-song('Enter Sandman', 'Metallica', 'Rock', 1991).
-song('Nothing Else Matters', 'Metallica', 'Rock', 1991).
-song('Back In Black', 'AC/DC', 'Rock', 1980).
-song('Thunderstruck', 'AC/DC', 'Rock', 1990).
-song('Highway To Hell', 'AC/DC', 'Rock', 1979).
-song('Stairway To Heaven', 'Led Zeppelin', 'Rock', 1971).
-song('Hotel California', 'Eagles', 'Rock', 1976).
-song('Bohemian Rhapsody', 'Queen', 'Rock', 1975).
-song('Smoke On The Water', 'Deep Purple', 'Rock', 1972).
-song('Sweet Child O Mine', 'Guns N Roses', 'Rock', 1987).
-song('November Rain', 'Guns N Roses', 'Rock', 1991).
+song(f_minor, depressive, 'Highway To Hell', 'AC/DC', 'Rock', 1979).
+song(a_minor, melancolic, 'Stairway To Heaven', 'Led Zeppelin', 'Rock', 1971).
+song(d_major, euphoric, 'Hotel California', 'Eagles', 'Rock', 1976).
+song(c_minor, sad, 'Bohemian Rhapsody', 'Queen', 'Rock', 1975).
+song(c_major, happy, 'Smoke On The Water', 'Deep Purple', 'Rock', 1972).
+song(f_major, relax, 'Sweet Child O Mine', 'Guns N Roses', 'Rock', 1987).
+song(b_major, strong, 'November Rain', 'Guns N Roses', 'Rock', 1991).
+song(d_major, euphoric, 'Wonderwall', 'Oasis', 'Rock', 1995).
+song(e_minor, melancholic, 'Paranoid', 'Black Sabbath', 'Rock', 1970).
+song(f_minor, depressive, 'Enter Sandman', 'Metallica', 'Rock', 1991).
+song(e_minor, melancholic, 'Nothing Else Matters', 'Metallica', 'Rock', 1991).
+song(a_major, joyful, 'Back In Black', 'AC/DC', 'Rock', 1980).
+song(e_major, powered, 'Thunderstruck', 'AC/DC', 'Rock', 1990).
+song(f_minor, depressive, 'Highway To Hell', 'AC/DC', 'Rock', 1979).
+song(a_minor, melancolic, 'Stairway To Heaven', 'Led Zeppelin', 'Rock', 1971).
+song(d_major, euphoric, 'Hotel California', 'Eagles', 'Rock', 1976).
+song(c_major, happy, 'Smoke On The Water', 'Deep Purple', 'Rock', 1972).
+song(f_major, relax, 'Sweet Child O Mine', 'Guns N Roses', 'Rock', 1987).
+song(b_major, strong, 'November Rain', 'Guns N Roses', 'Rock', 1991).
 
 % Dance
-song('I Wanna Dance with Somebody (Who Loves Me)', 'Whitney Houston', 'dance', 1980).
-song('Billie Jean', 'Michael Jackson', 'dance', 1980).
-song('Beat It', 'Michael Jackson', 'dance', 1980).
-song('Thriller', 'Michael Jackson', 'dance', 1980).
-song('Holiday', 'Madonna', 'dance', 1980).
-song('Like a Virgin', 'Madonna', 'dance', 1980).
-song('Into the Groove', 'Madonna', 'dance', 1980).
-song('Vogue', 'Madonna', 'dance', 1990).
-song('Pump Up the Jam', 'Technotronic', 'dance', 1990).
-song('Levels', 'Avicii', 'dance', 2010).
-song('Strobe', 'Deadmau5', 'dance', 2010).
-song('Levels', 'Nick Jonas', 'dance', 2010).
-song('This Is What You Came For', 'Calvin Harris ft. Rihanna', 'dance', 2010).
-song("Titanium", "David Guetta ft. Sia", "dance", 2010).
-song("Wake Me Up", "Avicii", "dance", 2010).
-song("Lonely Together", "Avicii ft. Rita Ora", "dance", 2010).
-song("Silent Shout", "The Knife", "dance", 2000).
-song("Satisfaction", "Benny Benassi", "dance", 2000).
-song("Sweet Dreams (Are Made of This)", "Eurythmics", "dance", 1980).
-song("I Wanna Dance with Somebody (Who Loves Me)", "Whitney Houston", "dance", 1980).
+song(c_major, happy, 'I Wanna Dance with Somebody (Who Loves Me)', 'Whitney Houston', 'dance', 1980).
+song(b_minor, solitary, 'Billie Jean', 'Michael Jackson', 'dance', 1980).
+song(d_minor, worried, 'Beat It', 'Michael Jackson', 'dance', 1980).
+song(b_major, strong, 'Thriller', 'Michael Jackson', 'dance', 1980).
+song(g_major, calm, 'Holiday', 'Madonna', 'dance', 1980).
+song(d_minor, worried, 'Like a Virgin', 'Madonna', 'dance', 1980).
+song(a_minor, melancolic, 'Into the Groove', 'Madonna', 'dance', 1980).
+song(f_major, relax, 'Vogue', 'Madonna', 'dance', 1990).
+song(a_minor, melancolic, 'Pump Up the Jam', 'Technotronic', 'dance', 1990).
+song(c_minor, sad, 'Levels', 'Avicii', 'dance', 2010).
+song(g_minor, unhappy, 'Strobe', 'Deadmau5', 'dance', 2010).
+song(f_minor, depressive, 'Levels', 'Nick Jonas', 'dance', 2010).
+song(a_minor, melancolic, 'This Is What You Came For', 'Calvin Harris ft. Rihanna', 'dance', 2010).
+song(c_minor, sad, "Titanium", "David Guetta ft. Sia", "dance", 2010).
+song(d_major, euphoric, "Wake Me Up", "Avicii", "dance", 2010).
+song(f_major, relax, "Lonely Together", "Avicii ft. Rita Ora", "dance", 2010).
+song(d_major, euphoric, "Silent Shout", "The Knife", "dance", 2000).
+song(b_major, strong, "Satisfaction", "Benny Benassi, David Guetta", "dance", 2000).
+song(c_minor, sad, "Sweet Dreams (Are Made of This)", "Eurythmics", "dance", 1980).
+song(c_major, happy, "I Wanna Dance with Somebody (Who Loves Me)", "Whitney Houston", "dance", 1980).
 
 % Techno
 song('Analogital', 'Len Faki', 'Techno', 2010).
@@ -444,3 +447,48 @@ song('Bluebird', 'Miranda Lambert', 'Country', 2020).
 song('Drunk Me', 'Mitchell Tenpenny', 'Country', 2018).
 song('Settling Down', 'Miranda Lambert', 'Country', 2020).
 
+% % Preguntas al usuario sobre sus preferencias musicales
+% pregunta_genero :-
+%   write('¿Cuál es tu género musical preferido? '),
+%   read(Genero),
+%   asserta(genero(Genero)).
+
+% pregunta_artista :-
+%   write('¿Cuál es tu artista o banda favorita? '),
+%   read(Artista),
+%   asserta(artista(Artista)).
+
+% pregunta_decada :-
+%   write('¿Qué década de lanzamiento de canciones prefieres? '),
+%   read(Decada),
+%   asserta(decada(Decada)).
+
+% % Regla para buscar en la base de datos de canciones y encontrar aquella que se ajuste a las preferencias del usuario
+% recomendaciones(Recomendaciones) :-
+%   findall(Cancion, (cancion(Cancion, _, genero(Genero), decada(Decada)),
+%                     artista(Artista),
+%                     (Genero == Genero; Artista == Artista; Decada == Decada)),
+%           Recomendaciones).
+
+% % Reglara para mostar al usuario una lista de canciones recomendadas
+% imprime_recomendaciones :-
+%   recomendaciones(Recomendaciones),
+%   write('Te recomendamos estas canciones: '),
+%   write(Recomendaciones).
+
+pregunta_animo :-
+  write('¿Cómo te sientes hoy? '),
+  read(Animo),
+  asserta(animo(Animo)).
+
+% Utilizar la información del estado de ánimo del usuario para buscar en la base de datos de canciones y encontrar aquellas que tengan un estilo que se ajuste a su estado de ánimo.
+recomendaciones(Recomendaciones) :-
+  animo(Animo),
+  findall(Cancion, (song(Cancion, _, _, _), key(Key, Animo), genre(Genero, Styles), member(Animo, Styles)),
+          Recomendaciones).
+
+% Presentar al usuario con una lista de canciones recomendadas. Esto podría hacerse mediante una regla como la siguiente:
+imprime_recomendaciones :-
+  recomendaciones(Recomendaciones),
+  write('Te recomendamos estas canciones: '),
+  write(Recomendaciones).
