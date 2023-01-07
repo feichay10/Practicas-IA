@@ -7,24 +7,24 @@
 % Autor: Cheuk Kelly Ng Pante (alu0101364544@ull.edu.es)
 % Fecha: 11/01/2023
 
-A partir de la siguiente key del tipo de canciones, generos de musica y base de datos de canciones con información sobre el género, el estilo y el artista:
+Crea un programa en Prolog que segun lo siguiente:
 
 % Clave (key) del tipo de canciones, establece una relacion entre la clave y el estado de animo
 % key(nombre, estado_de_animo) 
-key(c_major, happy).
-key(c_minor, sad).
-key(d_major, euphoric).
-key(d_minor, worried).
-key(e_major, powered).
-key(e_minor, restless).
-key(f_major, furious).
-key(f_minor, depressive).
-key(g_major, calm).
-key(g_minor, unhappy).
 key(a_major, joyful).
-key(a_minor, tender).
+key(a_minor, melancholic).
 key(b_major, strong).
 key(b_minor, solitary).
+key(c_major, happy). 
+key(c_minor, sad). 
+key(d_major, euphoric). 
+key(d_minor, worried). 
+key(e_major, powered).
+key(e_minor, restless). 
+key(f_major, relax). 
+key(f_minor, depressive).
+key(g_major, calm). 
+key(g_minor, unhappy).
 
 % Generos de musica. Cada genero tiene asociado una lista de estados de animo (moods) que pueden ser asociados a una cancion de ese genero 
 genre(pop, [happy, calm, satisfied, tender]).
@@ -44,125 +44,170 @@ genre(reggaeton, [sad, love_sick, powerful, euphoric, furious, depressive, stron
 genre(metal, [sad, love_sick, powerful, euphoric, furious, depressive, strong, restless]).
 genre(trap, [sad, love_sick, powerful, euphoric, furious, depressive, strong, restless]).
 genre(electronic, [sad, love_sick, powerful, euphoric, furious, depressive, strong, restless]).
-genre(country, [sad, love_sick, powerful, euphoric, furious, depressive, strong, restless]).
 
-% Definimos una base de datos de canciones con información sobre el género, el estilo y el artista
-% song(nombre, artista, genero, año)
+% Definimos una base de datos de canciones con información sobre la clave asociada a un estado de animo, el estado de animo, el nombre de la cancion, artista, el genero y el año de lanzamiento
+% song(key, mood, nombre, artista, genero, año)
 
 % Pop
-song('Dancing With A Stranger', 'Sam Smith', 'Pop', 2019).
-song('Someone You Loved', 'Lewis Capaldi', 'Pop', 2019).
-song('Sunflower', 'Post Malone', 'Pop', 2018).
+song(g_major, calm, 'Dancing With A Stranger', 'Sam Smith, Normani', 'Pop', 2019).
+song(c_major, happy, 'Someone You Loved', 'Lewis Capaldi', 'Pop', 2019).
+song(d_major, euphoric, 'Sunflower', 'Post Malone', 'Pop', 2018).
 
 % Rock
-song('Highway To Hell', 'AC/DC', 'Rock', 1979).
-song('Stairway To Heaven', 'Led Zeppelin', 'Rock', 1971).
-song('Hotel California', 'Eagles', 'Rock', 1976).
+song(f_minor, depressive, 'Highway To Hell', 'AC/DC', 'Rock', 1979).
+song(a_minor, melancholic, 'Stairway To Heaven', 'Led Zeppelin', 'Rock', 1971).
+song(d_major, euphoric, 'Hotel California', 'Eagles', 'Rock', 1976).
 
 % Dance
-song('I Wanna Dance with Somebody (Who Loves Me)', 'Whitney Houston', 'dance', 1980).
-song('Billie Jean', 'Michael Jackson', 'dance', 1980).
-song('Beat It', 'Michael Jackson', 'dance', 1980).
+song(c_major, happy, 'I Wanna Dance with Somebody (Who Loves Me)', 'Whitney Houston', 'dance', 1980).
+song(b_minor, solitary, 'Billie Jean', 'Michael Jackson', 'dance', 1980).
+song(d_minor, worried, 'Beat It', 'Michael Jackson', 'dance', 1980).
 
 % Techno
-song('Analogital', 'Len Faki', 'Techno', 2010).
-song('Coda', 'Adam Beyer', 'Techno', 2011).
-song('Into The Light', 'Chris Liebing', 'Techno', 2012).
+song(b_major, strong, 'Coda', 'Adam Beyer', 'Techno', 2011).
+song(d_major, euphoric, 'One (Your Name)', 'Swedish House Mafia', 'Techno', 2010).
+song(d_major, euphoric, 'Hello', 'Martin Solveig, Dragonette', 'Techno', 2010).
 
 % Rap 
-song('The Box', 'Roddy Ricch', 'Rap', 2020).
-song('Savage', 'Megan Thee Stallion', 'Rap', 2020).
-song('WAP', 'Cardi B', 'Rap', 2020).
+song(a_minor, melancholic, 'The Box', 'Roddy Ricch', 'Rap', 2020).
+song(b_major, strong, 'Savage', 'Megan Thee Stallion', 'Rap', 2020).
+song(c_major, happy, 'WAP', 'Cardi B, Megan Thee Stallion', 'Rap', 2020).
 
 % Hip-Hop
-song('Hotline Bling', 'Drake', 'Hip-hop', 2015)
-song('All the Way Up', 'Fat Joe', 'Hip-hop', 2016)
-song('Bodak Yellow', 'Cardi B', 'Hip-hop', 2017)
+song(d_major, euphoric, 'Hotline Bling', 'Drake', 'Hip-hop', 2015)
+song(a_minor, melancolic, 'All the Way Up', 'Fat Joe', 'Hip-hop', 2016)
+song(b_minor, solitary, 'Bodak Yellow', 'Cardi B', 'Hip-hop', 2017)
 
 % RnB
-song('Moises', 'Choclock', 'RnB', 2020).
-song('Dolores', 'Choclock', 'RnB', 2019).
-song('Facil', 'Choclock', 'RnB', 2017).
+song(f_major, relax, 'Moises', 'Choclock', 'RnB', 2020).
+song(g_major, calm, 'Dolores', 'Choclock', 'RnB', 2019).
+song(d_minor, worried, 'Facil', 'Choclock', 'RnB', 2017).
 
 % Soul
-song('Its A Mans, Mans Mans World', 'James Brown & The Famous Flames', 'Soul', 1966).
-song('Choices', 'Jordan Max', 'Soul', 2022).
-song('Addicted - Acoustic version', 'Ben L Oncle Soul', 'Soul', 2019).
+song(d_minor, worried, 'Its A Mans, Mans Mans World', 'James Brown & The Famous Flames', 'Soul', 1966).
+song(e_minor, restless, 'Choices', 'Jordan Max', 'Soul', 2022).
+song(f_minor, depressive, 'Addicted - Acoustic version', 'Ben L Oncle Soul', 'Soul', 2019).
 
 % Disco
-song('Hung Up', 'Madonna', 'Disco', 2005).
-song('Dont Stop the Music', 'Rihanna', 'Disco', 2007).
-song('Get Lucky', 'Daft Punk', 'Disco', 2013).
+song(a_minor, melancolic, 'Hung Up', 'Madonna', 'Disco', 2005).
+song(f_minor, depressive, 'Dont Stop the Music', 'Rihanna', 'Disco', 2007).
+song(f_minor, depressive, 'Get Lucky', 'Daft Punk ft. Pharrell Williams & Nile Rodgers', 'Disco', 2013).
 
 % Classical
-song('Symphony No. 5 in C Minor', 'Ludwig van Beethoven', 'Classical', 1808).
-song('Moonlight Sonata', 'Ludwig van Beethoven', 'Classical', 1801).
-song('Canon in D Major', 'Johann Pachelbel', 'Classical', 1680).
+song(c_minor, sad, 'Symphony No. 5 in C Minor', 'Ludwig van Beethoven', 'Classical', 1808).
+song(c_minor, sad, 'Moonlight Sonata', 'Ludwig van Beethoven', 'Classical', 1801).
+song(d_major, euphoric, 'Canon in D Major', 'Johann Pachelbel', 'Classical', 1680).
 
 % Blues
-song('Everybody Needs Somebody', 'The Blues Brothers', 'Blues', 1980).
-song('The Healing', 'Gary Clark Jr.', 'Blues', 2015).
-song('Im Tore Down', 'Gary Clark Jr.', 'Blues', 2015).
+song(f_major, relax, 'Everybody Needs Somebody to Love', 'The Blues Brothers', 'Blues', 1980).
+song(g_minor, unhappy, 'The Healing', 'Gary Clark Jr.', 'Blues', 2015).
+song(a_minor, melancolic, 'Bright Lights', 'Gary Clark Jr.', 'Blues', 2015).
 
 % Jazz
-song('Take the A Train', 'Duke Ellington', 'Jazz', 1941).
-song('Round Midnight', 'Thelonious Monk', 'Jazz', 1947).
-song('My Favorite Things', 'John Coltrane', 'Jazz', 1961).
-
-song('The Way You Look Tonight', 'Fred Astaire', 'Jazz', 1936).
+song(c_major, happy, 'Take the A Train', 'Duke Ellington', 'Jazz', 1941).
+song(g_major, calm, 'Round Midnight', 'Thelonious Monk', 'Jazz', 1947).
+song(e_major, powered, 'My Favorite Things', 'John Coltrane', 'Jazz', 1961).
 
 % Reggae
-song('Police and Thieves', 'Junior Murvin', 'Reggae', 1976).
-song('Toots and the Maytals', 'Pressure Drop', 'Reggae', 1970).
-song('The Harder They Come', 'Jimmy Cliff', 'Reggae', 1972).
+song(b_minor, solitary, 'Police and Thieves', 'Junior Murvin', 'Reggae', 1976).
+song(g_major, calm, 'Toots and the Maytals', 'Pressure Drop', 'Reggae', 1970).
+song(c_major, happy, 'The Harder They Come', 'Jimmy Cliff', 'Reggae', 1972).
 
 % Reggaeton
-song('Soy Peor', 'Bad Bunny', 'Reggaeton', 2017).
-song('Gato de Noche', 'Ñengo Flow, Bad Bunny', 'Reggaeton', 2022).
-song('VISTAL AL MAR', 'Quevedo', 'Reggaeton', 2022).
+song(c_minor, sad, 'Soy Peor', 'Bad Bunny', 'Reggaeton', 2017).
+song(g_major, calm, 'Gato de Noche', 'Ñengo Flow, Bad Bunny', 'Reggaeton', 2022).
+song(c_minor, sad, 'VISTA AL MAR', 'Quevedo', 'Reggaeton', 2022).
 
 % Metal
-song('Stairway to Heaven', 'Led Zeppelin', 'Metal', 1971).
-song('Master of Puppets', 'Metallica', 'Metal', 1986).
-song('One', 'Metallica', 'Metal', 1988).
+song(a_minor, melancolic, 'Stairway to Heaven', 'Led Zeppelin', 'Metal', 1971).
+song(e_minor, restless, 'Master of Puppets', 'Metallica', 'Metal', 1986).
+song(g_major, calm, 'One', 'Metallica', 'Metal', 1988).
 
 % Trap
-song('Si la Calle Llama', 'Eladio Carrion', 'Trap', 2022).
-song('Llegamos', 'Quevedo', 'Trap', 2020).
-song('Eladio Carrion: Bzrp Music Session', 'Eladio Carrion, Bizarrap', 'Trap', 2021).
+song(a_minor, melancolic, 'Si la Calle Llama', 'Eladio Carrion', 'Trap', 2022).
+song(g_major, calm, 'Llegamos', 'Quevedo', 'Trap', 2020).
+song(e_major, powered, 'Eladio Carrion: Bzrp Music Session', 'Eladio Carrion, Bizarrap', 'Trap', 2021).
 
 % Electronic
-song('Adrenaline Rush', 'Tiesto', 'Electronic', 2010).
-song('Levels', 'Avicii', 'Electronic', 2011).
-song('Silent Shout', 'The Knife', 'Electronic', 2006).
+song(e_major, powered, 'Pieces', 'AVAION', 'Electronic', 2019).
+song(c_minor, sad, 'Levels', 'Avicii', 'Electronic', 2011).
+song(d_major, euphoric, 'Silent Shout', 'The Knife', 'Electronic', 2006).
 
-% Country
-song('Remember You Young', 'Thomas Rhett', 'Country', 2019).
-song('I Hope', 'Gabby Barrett', 'Country', 2020).
-song('One Margarita', 'Luke Bryan', 'Country', 2020).
+haga una serie de preguntas al usuario del tipo: ¿como te sientes hoy?, ¿genero favorito?, etc. Y segun los datos del usuario, que recomiende una serie de canciones que hay en la base de datos que te he dado.
 
-:- initialization pregunta_animo.
+% Preguntas al usuario
+% ¿Como te sientes hoy?
+% ¿Que genero musical te gusta mas?
+% ¿Cual es tu cantante favorito?
 
-% Regla para preguntar al usuario por su estado de animo
-pregunta_animo :-
-  write('¿Cómo te sientes hoy? '),
-  read(Animo),
-  asserta(animo(Animo)).
+iniciar :-
+  write('¿Como te sientes hoy?'), nl,
+  write('1. Alegre'), nl,
+  write('2. Melancolico'), nl,
+  write('3. Fuerte'), nl,
+  write('4. Solitario'), nl,
+  write('5. Feliz'), nl,
+  write('6. Triste'), nl,
+  write('7. Euforico'), nl,
+  write('8. Preocupado'), nl,
+  write('9. Enfadado'), nl,
+  write('10. Inquieto'), nl,
+  write('11. Relajado'), nl,
+  write('12. Depresivo'), nl,
+  write('13. Calmado'), nl,
+  write('14. Infeliz'), nl,
 
-% Utilizar la información del estado de ánimo del usuario para buscar en la base de datos de canciones y encontrar aquellas que tengan un estilo que se ajuste a su estado de ánimo.
-recomendaciones(Recomendaciones) :-
-  animo(Animo),
-  findall(Cancion, (song(Cancion, _, _, _), key(Key, Animo), genre(Genero, Styles), member(Animo, Styles)),
-          Recomendaciones).
+  read(answer_mood),
 
-% Presentar al usuario con una lista de canciones recomendadas. Esto podría hacerse mediante una regla como la siguiente:
-imprime_recomendaciones :-
-  recomendaciones(Recomendaciones),
-  write('Te recomendamos estas canciones: '),
-  write(Recomendaciones).
+  write('¿Que genero musical te gusta mas?'), nl,
+  write('1. Pop'), nl,
+  write('2. Rock'), nl,
+  write('3. Dance'), nl,
+  write('4. Techno'), nl,
+  write('5. Rap'), nl,
+  write('6. Hip-hop'), nl,
+  write('7. RnB'), nl,
+  write('8. Soul'), nl,
+  write('9. Disco'), nl,
+  write('10. Classical'), nl,
+  write('11. Blues'), nl,
+  write('12. Jazz'), nl,
+  write('13. Reggae'), nl,
+  write('14. Reggaeton'), nl,
+  write('15. Metal'), nl,
+  write('16. Trap'), nl,
+  write('17. Electronic'), nl,
 
-% Regla para preguntar por el genero musical preferido del usuario
-pregunta_genero :-
-  write('¿Cuál es tu género musical preferido? '),
-  read(Genero),
-  asserta(genero(Genero)).
+  read(answer_genre),
+
+  write('¿Cual es tu cantante favorito?'), nl,
+  read(answer_artist).
+
+% Predicados
+
+% Recorra la base de datos y muestre las canciones que coincidan con el estado de animo del usuario
+mood(answer_mood) :-
+  song(_, answer_mood, Song, Artist, Genre, Year),
+  write('Song: '), write(Song), nl,
+  write('Artist: '), write(Artist), nl,
+  write('Genre: '), write(Genre), nl,
+  write('Year: '), write(Year), nl.
+
+% Recorra la base de datos y muestre las canciones que coincidan con el genero musical favorito del usuario
+genre(answer_genre) :-
+  song(_, _, Song, Artist, answer_genre, Year),
+  write('Song: '), write(Song), nl,
+  write('Artist: '), write(Artist), nl,
+  write('Genre: '), write(answer_genre), nl,
+  write('Year: '), write(Year), nl.
+
+% Recorra la base de datos y muestre las canciones que coincidan con el cantante favorito del usuario
+artist(answer_artist) :-
+  song(_, _, Song, answer_artist, Genre, Year),
+  write('Song: '), write(Song), nl,
+  write('Artist: '), write(answer_artist), nl,
+  write('Genre: '), write(Genre), nl,
+  write('Year: '), write(Year), nl.
+
+% Ejecutar el programa
+:- initialization iniciar.

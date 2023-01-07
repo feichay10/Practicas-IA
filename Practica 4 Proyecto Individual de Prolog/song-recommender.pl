@@ -22,7 +22,7 @@ key(c_minor, sad).
 key(d_major, euphoric). 
 key(d_minor, worried). 
 key(e_major, powered).
-key(e_minor, melancholic). 
+key(e_minor, restless). 
 key(f_major, relax). 
 key(f_minor, depressive).
 key(g_major, calm). 
@@ -81,9 +81,9 @@ song(c_major, happy, 'Smoke On The Water', 'Deep Purple', 'Rock', 1972).
 song(f_major, relax, 'Sweet Child O Mine', 'Guns N Roses', 'Rock', 1987).
 song(b_major, strong, 'November Rain', 'Guns N Roses', 'Rock', 1991).
 song(d_major, euphoric, 'Wonderwall', 'Oasis', 'Rock', 1995).
-song(e_minor, melancholic, 'Paranoid', 'Black Sabbath', 'Rock', 1970).
+song(e_minor, restless, 'Paranoid', 'Black Sabbath', 'Rock', 1970).
 song(f_minor, depressive, 'Enter Sandman', 'Metallica', 'Rock', 1991).
-song(e_minor, melancholic, 'Nothing Else Matters', 'Metallica', 'Rock', 1991).
+song(e_minor, restless, 'Nothing Else Matters', 'Metallica', 'Rock', 1991).
 song(a_major, joyful, 'Back In Black', 'AC/DC', 'Rock', 1980).
 song(e_major, powered, 'Thunderstruck', 'AC/DC', 'Rock', 1990).
 song(f_minor, depressive, 'Highway To Hell', 'AC/DC', 'Rock', 1979).
@@ -131,10 +131,10 @@ song(g_major, calm, 'Make It Bun Dem', 'Skrillex, Damian Marley', 'Techno', 2012
 song(g_major, calm, 'Turn Me On', 'David Guetta, Nicki Minaj', 'Techno', 2012).
 song(c_minor, sad, 'Levels', 'Avicii', 'Techno', 2013).
 song(d_major, euphoric, 'Wake Me Up', 'Avicii', 'Techno', 2013).
-song(e_minor, melancholic, 'Tsunami', 'DVBBS & Borgeous', 'Techno', 2013).
+song(e_minor, restless, 'Tsunami', 'DVBBS & Borgeous', 'Techno', 2013).
 song(c_major, happy, 'Animals', 'Martin Garrix', 'Techno', 2013).
 song(d_major, euphoric, 'Alone', 'Marshmello', 'Techno', 2016).
-song(e_minor, melancholic, 'In The Name Of Love', 'Martin Garrix, Bebe Rexha', 'Techno', 2016).
+song(e_minor, restless, 'In The Name Of Love', 'Martin Garrix, Bebe Rexha', 'Techno', 2016).
 song(e_major, powered, 'Silence', 'Marshmello, Khalid', 'Techno', 2017).
 
 % Rap 
@@ -151,7 +151,7 @@ song(c_major, happy, 'Gooba', '6ix9ine', 'Rap', 2020).
 song(f_minor, depressive, 'Money Longer', 'Lil Uzi Vert', 'Rap', 2016).
 song(f_major, relax, 'Mo City Don', 'Z-Ro', 'Rap', 2005).
 song(g_major, calm, 'Roses', 'SAINt JHN', 'Rap', 2020).
-song(e_minor, melancholic, 'The London', 'Young Thug ft. J. Cole & Travis Scott', 'Rap', 2020).
+song(e_minor, restless, 'The London', 'Young Thug ft. J. Cole & Travis Scott', 'Rap', 2020).
 song(a_minor, melancholic, 'No Role Modelz', 'J. Cole', 'Rap', 2014).
 song(c_major, happy, 'No Hands', 'Waka Flocka Flame', 'Rap', 2010).
 song(b_minor, solitary, 'No Problem', 'Chance The Rapper ft. Lil Wayne, 2 Chainz', 'Rap', 2016).
@@ -174,7 +174,7 @@ song(g_major, calm, 'Psycho', 'Post Malone', 'Hip-hop', 2018)
 song(d_major, euphoric, 'Work Out', 'J. Cole', 'Hip-hop', 2020)
 song(g_minor, unhappy, 'Death Bed (Coffee for Your Head)', 'Powfu', 'Hip-hop', 2020)
 song(d_minor, worried, 'The Zone', 'The Weeknd, Drake', 'Hip-hop', 2012)
-song(e_minor, melancholic, 'The London', 'Young Thug ft. J. Cole & Travis Scott', 'Hip-hop', 2020)
+song(e_minor, restless, 'The London', 'Young Thug ft. J. Cole & Travis Scott', 'Hip-hop', 2020)
 song(d_minor, worried, 'Black And Yellow [G-Mix]', 'Wiz Khalifa ft. Snoop Dog, Juicy J & T-Pain', 'Hip-hop', 2011)
 song(d_major, euphoric, 'Roof', 'DaBaby', 'Hip-hop', 2021)
 song(c_minor, sad, 'Good Days', 'SZA', 'Hip-hop', 2021)
@@ -205,10 +205,10 @@ song(f_minor, depressive, 'Pibas, Sol y Hierba', 'Dawaira', 'RnB', 2020).
 
 % Soul
 song(d_minor, worried, 'Its A Mans, Mans Mans World', 'James Brown & The Famous Flames', 'Soul', 1966).
-song(e_minor, melancholic, 'Choices', 'Jordan Max', 'Soul', 2022).
+song(e_minor, restless, 'Choices', 'Jordan Max', 'Soul', 2022).
 song(f_minor, depressive, 'Addicted - Acoustic version', 'Ben L Oncle Soul', 'Soul', 2019).
 song(g_major, calm, 'Lie Again', 'Giveon', 'Soul', 2022).
-song(e_minor, melancholic, 'Ain t No Sunshine', 'Bill Withers', 'Soul', 1971).
+song(e_minor, restless, 'Ain t No Sunshine', 'Bill Withers', 'Soul', 1971).
 song(d_minor, worried, 'Help', 'Aaron Taylor', 'Soul', 2016).
 song(c_major, happy, 'People Get Up And Drive Your Funky Soul - Remix', 'James Brown', 'Soul', 2003).
 song(c_major, happy, 'Better Of', 'Jordan Max', 'Soul', 2022).
@@ -273,7 +273,7 @@ song(c_major, happy, 'Symphony No. 94', 'Joseph Haydn', 'Classical', 1791).
 song(f_major, relax, 'Everybody Needs Somebody to Love', 'The Blues Brothers', 'Blues', 1980).
 song(g_minor, unhappy, 'The Healing', 'Gary Clark Jr.', 'Blues', 2015).
 song(a_minor, melancolic, 'Bright Lights', 'Gary Clark Jr.', 'Blues', 2015).
-song(e_minor, melancholic, 'Cold Blooded', 'Gary Clark Jr.', 'Blues', 2015).
+song(e_minor, restless, 'Cold Blooded', 'Gary Clark Jr.', 'Blues', 2015).
 song(g_major, calm, 'Lie To Me', 'Jonny Lang', 'Blues', 1997).
 song(f_minor, depressive, 'I Believe', 'Jonny Lang', 'Blues', 2006).
 song(d_major, euphoric, 'Still Rainin', 'Jonny Lang', 'Blues', 2006).
@@ -317,7 +317,7 @@ song(d_major, euphoric, 'The Way You Look Tonight', 'Fred Astaire', 'Jazz', 1936
 song(b_minor, solitary, 'Police and Thieves', 'Junior Murvin', 'Reggae', 1976).
 song(g_major, calm, 'Toots and the Maytals', 'Pressure Drop', 'Reggae', 1970).
 song(c_major, happy, 'The Harder They Come', 'Jimmy Cliff', 'Reggae', 1972).
-song(e_minor, melancholic, 'Here I Come', 'Barrington Levy', 'Reggae', 1979).
+song(e_minor, restless, 'Here I Come', 'Barrington Levy', 'Reggae', 1979).
 song(a_major, joyful, 'Stir It Up', 'The Wailers, Bob Marley', 'Reggae', 1973).
 song(f_minor, depressive, 'Punky Reggae Party', 'The Wailers, Bob Marley', 'Reggae', 1977).
 song(c_major, happy, 'No Woman, No Cry', 'The Wailers, Bob Marley', 'Reggae', 1974).
@@ -343,7 +343,7 @@ song(d_major, euphoric, 'Tusa', 'Karol G, Nicki Minaj', 'Reggaeton', 2019).
 song(b_minor, solitary, 'Sin Pijama', 'Becky G', 'Reggaeton', 2018).
 song(g_minor, unhappy, 'Con Calma', 'Daddy Yankee', 'Reggaeton', 2019).
 song(b_minor, solitary, 'Baila Baila Baila', 'Ozuna', 'Reggaeton', 2019).
-song(e_minor, melancholic, 'Te Boté', 'Nio Garcia', 'Reggaeton', 2018).
+song(e_minor, restless, 'Te Boté', 'Nio Garcia', 'Reggaeton', 2018).
 song(a_major, joyful, 'La Jumpa', 'Arcangel, Bad Bunny', 'Reggaeton', 2022).
 song(g_minor, unhappy, 'APA', 'Mora, Quevedo', 'Reggaeton', 2022).
 song(a_minor, melancolic, 'Siguelo Bailando', 'Ozuna', 'Reggaeton', 2017).
@@ -354,12 +354,12 @@ song(c_major, happy, 'Gasolina', 'Daddy Yankee', 'Reggaeton', 2004).
 song(c_major, happy, 'Dile Que Tu Me Quieres', 'Ozuna', 'Reggaeton', 2018).
 song(a_minor, melancolic, 'Me acostumbre', 'Bad Bunny, Arcangel', 'Reggaeton', 2017).
 song(d_minor, worried, 'Caviar', 'Lenny Tavarez', 'Reggaeton', 2017).
-song(e_minor, melancholic, 'Khalifa', 'Alex Rose, Almighty', 'Reggaeton', 2019).
+song(e_minor, restless, 'Khalifa', 'Alex Rose, Almighty', 'Reggaeton', 2019).
 song(f_major, relax, 'El Farsante', 'Ozuna', 'Reggaeton', 2017).
 
 % Metal
 song(a_minor, melancolic, 'Stairway to Heaven', 'Led Zeppelin', 'Metal', 1971).
-song(e_minor, melancholic, 'Master of Puppets', 'Metallica', 'Metal', 1986).
+song(e_minor, restless, 'Master of Puppets', 'Metallica', 'Metal', 1986).
 song(g_major, calm, 'One', 'Metallica', 'Metal', 1988).
 song(b_major, strong, 'Paradise City', 'Guns N Roses', 'Metal', 1988).
 song(f_major, relax, 'Sweet Child O Mine', 'Guns N Roses', 'Metal', 1987).
@@ -376,7 +376,7 @@ song(c_major, happy, 'Run to the Hills', 'Iron Maiden', 'Metal', 1982).
 song(c_major, happy, 'Hallowed Be Thy Name', 'Iron Maiden', 'Metal', 1982).
 song(d_major, euphoric, 'Breaking the Law', 'Judas Priest', 'Metal', 1980).
 song(c_minor, sad, 'Painkiller', 'Judas Priest', 'Metal', 1990).
-song(e_minor, melancholic, 'Hells Bells', 'AC/DC', 'Metal', 1980).
+song(e_minor, restless, 'Hells Bells', 'AC/DC', 'Metal', 1980).
 song(f_major, relax, 'Children of the Grave', 'Black Sabbath', 'Metal', 1971).
 
 % Trap
@@ -390,7 +390,7 @@ song(e_major, powered, 'Mo Bamba', 'Sheck Wes', 'Trap', 2018).
 song(c_major, happy, 'Kod', 'J. Cole', 'Trap', 2018).
 song(c_major, happy, 'One Dance', 'Drake', 'Trap', 2016).
 song(c_major, happy, 'Black Beatles', 'Rae Sremmurd, Gucci Mane', 'Trap', 2016).
-song(e_minor, melancholic, 'Dolce', 'Munic HB', 'Trap', 2021).
+song(e_minor, restless, 'Dolce', 'Munic HB', 'Trap', 2021).
 song(g_minor, unhappy, 'Kemba Walker', 'Eladio Carrion, Bad Bunny', 'Trap', 2020).
 song(d_minor, worried, 'Suge', 'DaBaby', 'Trap', 2019).
 song(a_major, joyful, 'Best Life', 'Cardi B', 'Trap', 2018).
@@ -410,17 +410,17 @@ song(a_major, joyful, 'The Veldt', 'Deadmau5', 'Electronic', 2012).
 song(c_major, happy, 'Satisfied', 'Showtek, VASSY', 'Electronic', 2015).
 song(g_major, calm, 'The Middle', 'Zedd, Maren Morris, Grey', 'Electronic', 2018).
 song(c_major, happy, 'Shelter', 'Porter Robinson, Madeon', 'Electronic', 2016).
-song(e_minor, melancholic, 'Summer', 'Calvin Harris', 'Electronic', 2014).
+song(e_minor, restless, 'Summer', 'Calvin Harris', 'Electronic', 2014).
 song(d_major, euphoric, 'BBY', 'Two Feet', 'Electronic', 2020).
 song(c_major, happy, 'Fuel to the Fire', 'Rationale', 'Electronic', 2017).
 song(d_minor, worried, 'No Diggity', 'Chet Faker', 'Electronic', 2012).
 song(a_major, joyful, 'Holy Mind', 'Hippie Sabotage', 'Electronic', 2017).
-song(e_minor, melancholic, 'Higher', 'Lemaitre, Maty Noyes', 'Electronic', 2017).
+song(e_minor, restless, 'Higher', 'Lemaitre, Maty Noyes', 'Electronic', 2017).
 song(a_minor, melancolic, 'You & Me - Flume Remix', 'Disclosure, Eliza Doolittle, Flume', 'Electronic', 2005).
 song(g_major, calm, 'Limo', 'Two Feet', 'Electronic', 2022).
 song(g_minor, unhappy, 'Often - Kygo Remix', 'The Weeknd, Kygo', 'Electronic', 2018).
 song(a_major, joyful, 'Caviar', 'Two Feet', 'Electronic', 2022).
-song(e_minor, melancholic, 'Where Are Ü Now', 'Jack Ü, Skrillex, Diplo, Justin Bieber', 'Electronic', 2015).
+song(e_minor, restless, 'Where Are Ü Now', 'Jack Ü, Skrillex, Diplo, Justin Bieber', 'Electronic', 2015).
 song(a_minor, melancolic, 'Rise Up', 'TheFatRat', 'Electronic', 2019).
 
 % % Preguntas al usuario sobre sus preferencias musicales
