@@ -205,158 +205,158 @@ song(g_minor, unhappy, 'Una Bala Con Mi Nombre', 'Abhir Hathi', 'RnB', 2022).
 song(f_minor, depressive, 'Pibas, Sol y Hierba', 'Dawaira', 'RnB', 2020).
 
 % Soul
-song('Its A Mans, Mans Mans World', 'James Brown & The Famous Flames', 'Soul', 1966).
-song('Choices', 'Jordan Max', 'Soul', 2022).
-song('Addicted - Acoustic version', 'Ben L Oncle Soul', 'Soul', 2019).
-song('Lie Again', 'Giveon', 'Soul', 2022).
-song('Ain t No Sunshine', 'Bill Withers', 'Soul', 1971).
-song('Help', 'Aaron Taylor', 'Soul', 2016).
-song('People Get Up And Drive Your Funky Soul - Remix', 'James Brown', 'Soul', 2003).
-song('Better Of', 'Jordan Max', 'Soul', 2022).
-song('I Feel a Change', 'Charles Bradley ft. Menahan Street Band', 'Soul', 2018).
-song('I Need a Dolar', 'Aloe Blacc', 'Soul', 2010).
-song('Mad About You', 'Son Little', 'Soul', 2017).
-song('Counting on me', 'Jordan Max', 'Soul', 2022).
-song('Distant Lover', 'Marvin Gaye', 'Soul', 1973).
-song('Call You When I Get Home', 'Santino Le Saint', 'Soul', 2020).
-song('The Bloom', 'Wesley Joseph', 'Soul', 2021).
-song('Gold', 'Brandon Banks', 'Soul', 2020).
-song('Gaslight', 'Eli Derby', 'Soul', 2021).
-song('Love Comes Easy', 'Thee Sacred Souls', 'Soul', 2022).
-song('LIMB', 'Planet Giza', 'Soul', 2021).
-song('MOOD', 'Jessie Reyez', 'Soul', 2022).
+song(d_minor, worried, 'Its A Mans, Mans Mans World', 'James Brown & The Famous Flames', 'Soul', 1966).
+song(e_minor, melancholic, 'Choices', 'Jordan Max', 'Soul', 2022).
+song(f_minor, depressive, 'Addicted - Acoustic version', 'Ben L Oncle Soul', 'Soul', 2019).
+song(g_major, calm, 'Lie Again', 'Giveon', 'Soul', 2022).
+song(e_minor, melancholic, 'Ain t No Sunshine', 'Bill Withers', 'Soul', 1971).
+song(d_minor, worried, 'Help', 'Aaron Taylor', 'Soul', 2016).
+song(c_major, happy, 'People Get Up And Drive Your Funky Soul - Remix', 'James Brown', 'Soul', 2003).
+song(c_major, happy, 'Better Of', 'Jordan Max', 'Soul', 2022).
+song(f_minor, depressive, 'I Feel a Change', 'Charles Bradley ft. Menahan Street Band', 'Soul', 2018).
+song(c_minor, sad, 'I Need a Dolar', 'Aloe Blacc', 'Soul', 2010).
+song(g_major, calm, 'Mad About You', 'Son Little', 'Soul', 2017).
+song(b_minor, solitary, 'Counting on me', 'Jordan Max', 'Soul', 2022).
+song(e_major, powered, 'Distant Lover', 'Marvin Gaye', 'Soul', 1973).
+song(c_minor, sad, 'Call You When I Get Home', 'Santino Le Saint', 'Soul', 2020).
+song(a_minor, melancolic, 'The Bloom', 'Wesley Joseph', 'Soul', 2021).
+song(g_major, calm, 'Gold', 'Brandon Banks', 'Soul', 2020).
+song(f_minor, depressive, 'Gaslight', 'Eli Derby', 'Soul', 2021).
+song(f_minor, depressive, 'Love Comes Easy', 'Thee Sacred Souls', 'Soul', 2022).
+song(g_minor, unhappy, 'LIMB', 'Planet Giza', 'Soul', 2021).
+song(g_minor, unhappy, 'MOOD', 'Jessie Reyez', 'Soul', 2022).
 
 % Disco
-song('Hung Up', 'Madonna', 'Disco', 2005).
-song('Dont Stop the Music', 'Rihanna', 'Disco', 2007).
-song('Get Lucky', 'Daft Punk', 'Disco', 2013).
-song('Uptown Funk', 'Mark Ronson ft. Bruno Mars', 'Disco', 2014).
-song('Levels', 'Avicii', 'Disco', 2011).
-song('Candy', 'Robbie Williams', 'Disco', 2001).
-song('Dancing in the Dark', 'Rihanna', 'Disco', 2002).
-song('Shes a Lady', 'Tom Jones', 'Disco', 1971).
-song('I Will Survive', 'Gloria Gaynor', 'Disco', 1978).
-song('Le Freak', 'Chic', 'Disco', 1978).
-song('Im Coming Out', 'Diana Ross', 'Disco', 1980).
-song('Y.M.C.A.', 'The Village People', 'Disco', 1978).
-song('Boogie Oogie Oogie', 'A Taste of Honey', 'Disco', 1978).
-song('Stayin Alive', 'Bee Gees', 'Disco', 1977).
-song('I Feel Love', 'Donna Summer', 'Disco', 1977).
-song('Good Times', 'Chic', 'Disco', 1979).
-song('Disco Inferno', 'The Trammps', 'Disco', 1976).
-song('Funkytown', 'Lipps Inc.', 'Disco', 1979).
-song('Hes the Greatest Dancer', 'Sister Sledge', 'Disco', 1979).
-song('Disco Nights (Rock-Freak)', 'GQ', 'Disco', 1979).
+song(a_minor, melancolic, 'Hung Up', 'Madonna', 'Disco', 2005).
+song(f_minor, depressive, 'Dont Stop the Music', 'Rihanna', 'Disco', 2007).
+song(f_minor, depressive, 'Get Lucky', 'Daft Punk ft. Pharrell Williams & Nile Rodgers', 'Disco', 2013).
+song(c_major, happy, 'Uptown Funk', 'Mark Ronson ft. Bruno Mars', 'Disco', 2014).
+song(c_minor, sad, 'Levels', 'Avicii', 'Disco', 2011).
+song(a_major, joyful, 'Candy', 'Robbie Williams', 'Disco', 2001).
+song(c_major, happy, 'Dancing in the Dark', 'Rihanna', 'Disco', 2002).
+song(d_major, euphoric, 'Shes a Lady', 'Tom Jones', 'Disco', 1971).
+song(c_major, happy, 'I Will Survive', 'Gloria Gaynor', 'Disco', 1978).
+song(g_major, calm, 'Le Freak', 'Chic', 'Disco', 1978).
+song(f_major, relax, 'Im Coming Out', 'Diana Ross', 'Disco', 1980).
+song(f_major, relax, 'Y.M.C.A.', 'The Village People', 'Disco', 1978).
+song(d_minor, worried, 'Boogie Oogie Oogie', 'A Taste of Honey', 'Disco', 1978).
+song(a_minor, melancolic, 'Stayin Alive', 'Bee Gees', 'Disco', 1977).
+song(c_major, happy, 'I Feel Love', 'Donna Summer', 'Disco', 1977).
+song(d_major, euphoric, 'Good Times', 'Chic', 'Disco', 1979).
+song(a_major, joyful, 'Disco Inferno', 'The Trammps', 'Disco', 1976).
+song(c_major, happy, 'Funkytown', 'Lipps Inc.', 'Disco', 1979).
+song(d_minor, worried, 'Hes the Greatest Dancer', 'Sister Sledge', 'Disco', 1979).
+song(f_minor, depressive, 'Disco Nights (Rock-Freak)', 'GQ', 'Disco', 1979).
 
 % Classical
-song('Symphony No. 5 in C Minor', 'Ludwig van Beethoven', 'Classical', 1808).
-song('Moonlight Sonata', 'Ludwig van Beethoven', 'Classical', 1801).
-song('Canon in D Major', 'Johann Pachelbel', 'Classical', 1680).
-song('Rhapsody on a Theme of Paganini', 'Sergei Rachmaninoff', 'Classical', 1934).
-song('Swan Lake', 'Pyotr Ilyich Tchaikovsky', 'Classical', 1876).
-song('The Four Seasons', 'Antonio Vivaldi', 'Classical', 1723).
-song('Eine kleine Nachtmusik', 'Wolfgang Amadeus Mozart', 'Classical', 1787).
-song('Piano Concerto No. 21', 'Wolfgang Amadeus Mozart', 'Classical', 1785).
-song('The Nutcracker', 'Pyotr Ilyich Tchaikovsky', 'Classical', 1892).
-song('Requiem Mass in D Minor', 'Wolfgang Amadeus Mozart', 'Classical', 1791).
-song('Symphony No. 9', 'Ludwig van Beethoven', 'Classical', 1824).
-song('The Magic Flute', 'Wolfgang Amadeus Mozart', 'Classical', 1791).
-song('Piano Sonata No. 14', 'Ludwig van Beethoven', 'Classical', 1801).
-song('Violin Concerto in D Major', 'Johannes Brahms', 'Classical', 1878).
-song('Symphony No. 40', 'Wolfgang Amadeus Mozart', 'Classical', 1788).
-song('Symphony No. 41', 'Wolfgang Amadeus Mozart', 'Classical', 1788).
-song('Brandenburg Concerto No. 3', 'Johann Sebastian Bach', 'Classical', 1721).
-song('Symphony No. 101', 'Joseph Haydn', 'Classical', 1794).
-song('The Planets', 'Gustav Holst', 'Classical', 1916).
-song('Symphony No. 94', 'Joseph Haydn', 'Classical', 1791).
+song(c_minor, sad, 'Symphony No. 5 in C Minor', 'Ludwig van Beethoven', 'Classical', 1808).
+song(c_minor, sad, 'Moonlight Sonata', 'Ludwig van Beethoven', 'Classical', 1801).
+song(d_major, euphoric, 'Canon in D Major', 'Johann Pachelbel', 'Classical', 1680).
+song(c_major, happy, 'Rhapsody on a Theme of Paganini', 'Sergei Rachmaninoff', 'Classical', 1934).
+song(a_major, joyful, 'Swan Lake', 'Pyotr Ilyich Tchaikovsky', 'Classical', 1876).
+song(f_minor, depressive, 'The Four Seasons', 'Antonio Vivaldi', 'Classical', 1723).
+song(c_major, happy, 'Eine kleine Nachtmusik', 'Wolfgang Amadeus Mozart', 'Classical', 1787).
+song(f_major, relax, 'Piano Concerto No. 21', 'Wolfgang Amadeus Mozart', 'Classical', 1785).
+song(f_major, relax, 'The Nutcracker', 'Pyotr Ilyich Tchaikovsky', 'Classical', 1892).
+song(d_major, euphoric, 'Requiem Mass in D Minor', 'Wolfgang Amadeus Mozart', 'Classical', 1791).
+song(a_major, joyful, 'Symphony No. 9', 'Ludwig van Beethoven', 'Classical', 1824).
+song(g_major, calm, 'The Magic Flute', 'Wolfgang Amadeus Mozart', 'Classical', 1791).
+song(c_minor, sad, 'Piano Sonata No. 14', 'Ludwig van Beethoven', 'Classical', 1801).
+song(c_major, happy, 'Violin Concerto in D Major', 'Johannes Brahms', 'Classical', 1878).
+song(g_minor, unhappy, 'Symphony No. 40', 'Wolfgang Amadeus Mozart', 'Classical', 1788).
+song(g_major, calm, 'Symphony No. 41', 'Wolfgang Amadeus Mozart', 'Classical', 1788).
+song(f_major, relax, 'Brandenburg Concerto No. 3', 'Johann Sebastian Bach', 'Classical', 1721).
+song(g_major, calm, 'Symphony No. 101', 'Joseph Haydn', 'Classical', 1794).
+song(c_major, happy, 'The Planets', 'Gustav Holst', 'Classical', 1916).
+song(c_major, happy, 'Symphony No. 94', 'Joseph Haydn', 'Classical', 1791).
 
 % Blues
-song('Everybody Needs Somebody', 'The Blues Brothers', 'Blues', 1980).
-song('The Healing', 'Gary Clark Jr.', 'Blues', 2015).
-song('Im Tore Down', 'Gary Clark Jr.', 'Blues', 2015).
-song('Where Did I Go Wrong', 'Gary Clark Jr.', 'Blues', 2015).
-song('I Feel Like Breaking Up Somebodys Home', 'Jonny Lang', 'Blues', 2006).
-song('I Believe', 'Jonny Lang', 'Blues', 2006).
-song('Still Rainin', 'Jonny Lang', 'Blues', 2006).
-song('Sloe Gin', 'Joe Bonamassa', 'Blues', 2007).
-song('Jelly Roll', 'Beth Hart', 'Blues', 2011).
-song('Baddest Blues', 'Beth Hart', 'Blues', 2013).
-song('My California', 'Beth Hart', 'Blues', 2010).
-song('Blues of Desperation', 'Joe Bonamassa', 'Blues', 2016).
-song('This Train', 'Derek Trucks Band', 'Blues', 2002).
-song('Get What You Deserve', 'Derek Trucks Band', 'Blues', 2004).
-song('I Know', 'Derek Trucks Band', 'Blues', 2006).
-song('Black Coffee', 'Susan Tedeschi', 'Blues', 2006).
-song('Voodoo Woman', 'Koko Taylor', 'Blues', 2003).
-song('Living on the Moon', 'Shemekia Copeland', 'Blues', 2018).
-song('Aint Got Time For Hate', 'Shemekia Copeland', 'Blues', 2018).
-song('American Dream', 'Los Lobos', 'Blues', 2018).
+song(f_major, relax, 'Everybody Needs Somebody to Love', 'The Blues Brothers', 'Blues', 1980).
+song(g_minor, unhappy, 'The Healing', 'Gary Clark Jr.', 'Blues', 2015).
+song(a_minor, melancolic, 'Bright Lights', 'Gary Clark Jr.', 'Blues', 2015).
+song(e_minor, melancholic, 'Cold Blooded', 'Gary Clark Jr.', 'Blues', 2015).
+song(g_major, calm, 'Lie To Me', 'Jonny Lang', 'Blues', 1997).
+song(f_minor, depressive, 'I Believe', 'Jonny Lang', 'Blues', 2006).
+song(d_major, euphoric, 'Still Rainin', 'Jonny Lang', 'Blues', 2006).
+song(a_minor, melancolic, 'Sloe Gin', 'Joe Bonamassa', 'Blues', 2007).
+song(d_minor, worried, 'Caught Out In The Rain', 'Beth Hart', 'Blues', 2011).
+song(c_minor, sad, 'Baddest Blues', 'Beth Hart', 'Blues', 2013).
+song(e_major, powered, 'My California', 'Beth Hart', 'Blues', 2010).
+song(c_major, happy, 'Blues of Desperation', 'Joe Bonamassa', 'Blues', 2016).
+song(a_major, joyful, 'This Train', 'Derek Trucks Band', 'Blues', 2002).
+song(b_minor, solitary, 'Get What You Deserve', 'Derek Trucks Band', 'Blues', 2004).
+song(c_major, happy, 'I Know', 'Derek Trucks Band', 'Blues', 2006).
+song(e_major, powered, 'You Got The Silver', 'Susan Tedeschi', 'Blues', 2005).
+song(f_minor, depressive, 'Voodoo Woman', 'Koko Taylor', 'Blues', 2003).
+song(c_major, happy, 'Livin On Love', 'Shemekia Copeland', 'Blues', 2002).
+song(g_minor, unhappy, 'Aint Got Time For Hate', 'Shemekia Copeland', 'Blues', 2018).
+song(f_major, relax, 'My Babe', 'Little Walter', 'Blues', 1993).
 
 % Jazz
-song('Take the A Train', 'Duke Ellington', 'Jazz', 1941).
-song('Round Midnight', 'Thelonious Monk', 'Jazz', 1947).
-song('My Favorite Things', 'John Coltrane', 'Jazz', 1961).
-song('So What', 'Miles Davis', 'Jazz', 1959).
-song('Blue in Green', 'Miles Davis', 'Jazz', 1959).
-song('All Blues', 'Miles Davis', 'Jazz', 1959).
-song('A Love Supreme', 'John Coltrane', 'Jazz', 1964).
-song('Giant Steps', 'John Coltrane', 'Jazz', 1959).
-song('Misty', 'Erroll Garner', 'Jazz', 1954).
-song('Lullaby of Birdland', 'George Shearing', 'Jazz', 1952).
-song('Take Five', 'Dave Brubeck', 'Jazz', 1959).
-song('Maiden Voyage', 'Herbie Hancock', 'Jazz', 1965).
-song('Spain', 'Chick Corea', 'Jazz', 1972).
-song('Someday My Prince Will Come', 'Miles Davis', 'Jazz', 1961).
-song('Body and Soul', 'John Coltrane', 'Jazz', 1959).
-song('In a Silent Way', 'Miles Davis', 'Jazz', 1969).
-song('Footprints', 'Wayne Shorter', 'Jazz', 1966).
-song('Naima', 'John Coltrane', 'Jazz', 1959).
-song('Blue Bossa', 'Kenny Dorham', 'Jazz', 1962).
-song('The Way You Look Tonight', 'Fred Astaire', 'Jazz', 1936).
+song(c_major, happy, 'Take the A Train', 'Duke Ellington', 'Jazz', 1941).
+song(g_major, calm, 'Round Midnight', 'Thelonious Monk', 'Jazz', 1947).
+song(e_major, powered, 'My Favorite Things', 'John Coltrane', 'Jazz', 1961).
+song(c_major, happy, 'So What', 'Miles Davis', 'Jazz', 1959).
+song(d_minor, worried, 'Blue in Green', 'Miles Davis', 'Jazz', 1959).
+song(c_major, happy, 'All Blues', 'Miles Davis', 'Jazz', 1959).
+song(f_minor, depressive, 'A Love Supreme', 'John Coltrane', 'Jazz', 1964).
+song(c_minor, sad, 'Giant Steps', 'John Coltrane', 'Jazz', 1959).
+song(a_minor, melancolic, 'Misty', 'Erroll Garner', 'Jazz', 1954).
+song(f_major, relax, 'Lullaby of Birdland', 'George Shearing', 'Jazz', 1952).
+song(g_minor, unhappy, 'Take Five', 'Dave Brubeck', 'Jazz', 1959).
+song(c_minor, sad, 'Maiden Voyage', 'Herbie Hancock', 'Jazz', 1965).
+song(b_minor, solitary, 'Spain', 'Chick Corea', 'Jazz', 1972).
+song(c_minor, sad, 'Someday My Prince Will Come', 'Miles Davis', 'Jazz', 1961).
+song(c_major, happy, 'Body and Soul', 'John Coltrane', 'Jazz', 1959).
+song(g_minor, unhappy, 'In a Silent Way', 'Miles Davis', 'Jazz', 1969).
+song(g_minor, unhappy, 'Footprints', 'Wayne Shorter', 'Jazz', 1966).
+song(a_minor, melancolic, 'Naima', 'John Coltrane', 'Jazz', 1959).
+song(a_minor, melancolic, 'Blue Bossa', 'Kenny Dorham', 'Jazz', 1962).
+song(d_major, euphoric, 'The Way You Look Tonight', 'Fred Astaire', 'Jazz', 1936).
 
 % Reggae
-song('Police and Thieves', 'Junior Murvin', 'Reggae', 1976).
-song('Toots and the Maytals', 'Pressure Drop', 'Reggae', 1970).
-song('The Harder They Come', 'Jimmy Cliff', 'Reggae', 1972).
-song('Here I Come', 'Barrington Levy', 'Reggae', 1979).
-song('Stir It Up', 'The Wailers', 'Reggae', 1973).
-song('Punky Reggae Party', 'Bob Marley', 'Reggae', 1977).
-song('No Woman, No Cry', 'Bob Marley', 'Reggae', 1974).
-song('Red Red Wine', 'UB40', 'Reggae', 1983).
-song('I Can See Clearly Now', 'Johnny Nash', 'Reggae', 1972).
-song('Guava Jelly', 'Bob Marley', 'Reggae', 1971).
-song('Is This Love', 'Bob Marley', 'Reggae', 1978).
-song('Buffalo Soldier', 'Bob Marley', 'Reggae', 1983).
-song('Rat Race', 'The Specials', 'Reggae', 1979).
-song('One Love/People Get Ready', 'Bob Marley', 'Reggae', 1977).
-song('Pass the Dutchie', 'Musical Youth', 'Reggae', 1982).
-song('Natural Mystic', 'Bob Marley', 'Reggae', 1979).
-song('Ring the Alarm', 'Tenor Saw', 'Reggae', 1984).
-song('Mr. Loverman', 'Shabba Ranks', 'Reggae', 1992).
-song('Murder She Wrote', 'Chaka Demus and Pliers', 'Reggae', 1992).
-song('Hot, Hot, Hot', 'Arrow', 'Reggae', 1982).
+song(b_minor, solitary, 'Police and Thieves', 'Junior Murvin', 'Reggae', 1976).
+song(g_major, calm, 'Toots and the Maytals', 'Pressure Drop', 'Reggae', 1970).
+song(c_major, happy, 'The Harder They Come', 'Jimmy Cliff', 'Reggae', 1972).
+song(e_minor, melancholic, 'Here I Come', 'Barrington Levy', 'Reggae', 1979).
+song(a_major, joyful, 'Stir It Up', 'The Wailers, Bob Marley', 'Reggae', 1973).
+song(f_minor, depressive, 'Punky Reggae Party', 'The Wailers, Bob Marley', 'Reggae', 1977).
+song(c_major, happy, 'No Woman, No Cry', 'The Wailers, Bob Marley', 'Reggae', 1974).
+song(c_major, happy, 'Red Red Wine', 'UB40', 'Reggae', 1983).
+song(g_major, calm, 'I Can See Clearly Now', 'Johnny Nash', 'Reggae', 1972).
+song(c_major, happy, 'Guava Jelly', 'Jonny Nash', 'Reggae', 1971).
+song(f_minor, depressive, 'Is This Love', 'Bob Marley', 'Reggae', 1978).
+song(a_major, joyful, 'Buffalo Soldier', 'The Wailers, Bob Marley', 'Reggae', 1983).
+song(c_minor, sad, 'Rat Race', 'The Specials', 'Reggae', 1979).
+song(a_major, joyful, 'One Love/People Get Ready', 'The Wailers, Bob Marley', 'Reggae', 1977).
+song(g_major, calm, 'Pass the Dutchie', 'Musical Youth', 'Reggae', 1982).
+song(g_major, calm, 'Natural Mystic', 'The Wailers, Bob Marley', 'Reggae', 1979).
+song(a_minor, melancolic, 'Ring the Alarm', 'Tenor Saw', 'Reggae', 1984).
+song(g_major, calm, 'Mr. Loverman', 'Shabba Ranks, Chevelle Franklin', 'Reggae', 1992).
+song(b_minor, solitary, 'Murder She Wrote', 'Chaka Demus and Pliers', 'Reggae', 1992).
+song(f_major, relax, 'Hot, Hot, Hot', 'Arrow', 'Reggae', 1982).
 
 % Reggaeton
-song('Soy Peor', 'Bad Bunny', 'Reggaeton', 2017).
-song('Gato de Noche', 'Ñengo Flow, Bad Bunny', 'Reggaeton', 2022).
-song('VISTAL AL MAR', 'Quevedo', 'Reggaeton', 2022).
-song('Tusa', 'Karol G, Nicki Minaj', 'Reggaeton', 2019).
-song('Sin Pijama', 'Becky G', 'Reggaeton', 2018).
-song('Con Calma', 'Daddy Yankee', 'Reggaeton', 2019).
-song('Baila Baila Baila', 'Ozuna', 'Reggaeton', 2019).
-song('Te Boté', 'Nio Garcia', 'Reggaeton', 2018).
-song('La Jumpa', 'Arcangel, Bad Bunny', 'Reggaeton', 2022).
-song('APA', 'Mora, Quevedo', 'Reggaeton', 2022).
-song('Siguelo Bailando', 'Ozuna', 'Reggaeton', 2017).
-song('Aventura', 'Lunay, Ozuna, Anuel AA', 'Reggaeton', 2019).
-song('Otro trago', 'Sech, Darell', 'Reggaeton', 2019).
-song('Amuleto', 'Maikel Delacalle', 'Reggaeton', 2018).
-song('Gasolina', 'Daddy Yankee', 'Reggaeton', 2004).
-song('El Favorito', 'Ozuna', 'Reggaeton', 2018).
-song('Me acostumbre', 'Bad Bunny, Arcangel', 'Reggaeton', 2017).
-song('Caviar', 'Lenny Tavarez', 'Reggaeton', 2017).
-song('Khalifa', 'Alex Rose, Almighty', 'Reggaeton', 2019).
-song('El Farsante', 'Ozuna', 'Reggaeton', 2017).
+song(c_minor, sad, 'Soy Peor', 'Bad Bunny', 'Reggaeton', 2017).
+song(g_major, calm, 'Gato de Noche', 'Ñengo Flow, Bad Bunny', 'Reggaeton', 2022).
+song(c_minor, sad, 'VISTA AL MAR', 'Quevedo', 'Reggaeton', 2022).
+song(d_major, euphoric, 'Tusa', 'Karol G, Nicki Minaj', 'Reggaeton', 2019).
+song(b_minor, solitary, 'Sin Pijama', 'Becky G', 'Reggaeton', 2018).
+song(g_minor, unhappy, 'Con Calma', 'Daddy Yankee', 'Reggaeton', 2019).
+song(b_minor, solitary, 'Baila Baila Baila', 'Ozuna', 'Reggaeton', 2019).
+song(e_minor, melancholic, 'Te Boté', 'Nio Garcia', 'Reggaeton', 2018).
+song(a_major, joyful, 'La Jumpa', 'Arcangel, Bad Bunny', 'Reggaeton', 2022).
+song(g_minor, unhappy, 'APA', 'Mora, Quevedo', 'Reggaeton', 2022).
+song(a_minor, melancolic, 'Siguelo Bailando', 'Ozuna', 'Reggaeton', 2017).
+song(f_major, relax, 'Aventura', 'Lunay, Ozuna, Anuel AA', 'Reggaeton', 2019).
+song(c_major, happy, 'Otro trago', 'Sech, Darell', 'Reggaeton', 2019).
+song(c_major, happy, 'Amuleto', 'Maikel Delacalle', 'Reggaeton', 2018).
+song(c_major, happy, 'Gasolina', 'Daddy Yankee', 'Reggaeton', 2004).
+song(c_major, happy, 'Dile Que Tu Me Quieres', 'Ozuna', 'Reggaeton', 2018).
+song(a_minor, melancolic, 'Me acostumbre', 'Bad Bunny, Arcangel', 'Reggaeton', 2017).
+song(d_minor, worried, 'Caviar', 'Lenny Tavarez', 'Reggaeton', 2017).
+song(e_minor, melancholic, 'Khalifa', 'Alex Rose, Almighty', 'Reggaeton', 2019).
+song(f_major, relax, 'El Farsante', 'Ozuna', 'Reggaeton', 2017).
 
 % Metal
 song('Stairway to Heaven', 'Led Zeppelin', 'Metal', 1971).
