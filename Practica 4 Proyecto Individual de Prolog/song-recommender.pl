@@ -443,9 +443,11 @@ iniciar :-
     write('\n'),
     read(AnswerGenre),
     (genre(AnswerGenre, _) -> true; write(AnswerGenre), write(': No es un genero musical valido.\n\n'), fail),
-    write('Estas son las canciones que te recomiendo del genero '),
-    write(AnswerGenre), write(' y estado de animo '), write(AnswerMood), write(':\n'),
+    write('Estas son las canciones que te recomiendo del genero \"'),
+    write(AnswerGenre), write('\" y estado de animo \"'), write(AnswerMood), write('\":\n'),
     % Quiero imprimir solo la cancion y el artista
     findall([Song, Artist], song(_, AnswerMood, Song, Artist, AnswerGenre, _), List),
     write_down_list(List),
+    % Si no hay canciones que coincidan con el estado de animo y el genero
+    (List = [] -> write('No hay canciones que coincidan con el estado de animo y el genero.\n\n'); true),
     write('\n').
