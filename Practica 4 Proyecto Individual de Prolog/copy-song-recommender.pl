@@ -149,17 +149,25 @@ iniciar :-
   % Comprueba si el genero musical esta en la base de conocimiento y si no esta, vuelve a preguntar. Si está sigue con el siguiente predicado
   (genre(AnswerGenre, _) -> true; (write(AnswerGenre), write(': Es un genero musical invalido\n\n'), fail)),
 
-  write('¿Cuál es tu cantante favorito?\n'),
-  read(AnswerArtist).
+  % write('¿Cuál es tu cantante favorito?\n'),
+  % read(AnswerArtist).
 
-  song_list(AnswerMood, AnswerGenre).
+  % Imprime la lista de canciones que coinciden con los parametros
+  song_list(AnswerMood, AnswerGenre), nl,
+  song_list(Mood, Genre) :-
+    findall(Song, song(_, Mood, Song, _, Genre, _), Songs),
+    write('Canciones: '), writeln(Songs).
+
+
+  % Pregunta si quiere volver a ejecutar el programa
+  % write('\n¿Quieres volver a ejecutar el programa? (s/n)\n'),
+  % read(Answer),
+
 
 % Predicados
 % Segun el estado de animo y el genero musical que da el usuario, que imprima una lista de canciones que coincidan con los parametros
 % Por ejemplo, si el estado de animo es 'strong' y el genero musical es 'Rap', entonces imprimir una lista de canciones de Rap que tengan el estado de animo 'strong'
-song_list(Mood, Genre) :-
-  findall(Song, song(_, Mood, Song, _, Genre, _), SongList),
-  write(SongList).
+
 
 
 % Ejecutar el programa
