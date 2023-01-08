@@ -139,7 +139,7 @@ iniciar :-
   write('\n'),
   read(AnswerMood),
   % Comprueba si el estado de animo esta en la base de conocimiento y si no esta, vuelve a preguntar. Si está sigue con el siguiente predicado
-  (key(_, AnswerMood) -> true; (write(AnswerMood), write(': Es un estado de animo invalido\n\n'), fail)),
+  (key(_, AnswerMood) -> true; (write(AnswerMood), write(': No es un estado de animo valido.\n\n'), fail)),
 
   repeat,
   write('¿Qué género musical te gusta más?\n'),
@@ -147,16 +147,22 @@ iniciar :-
   write('\n'),
   read(AnswerGenre),
   % Comprueba si el genero musical esta en la base de conocimiento y si no esta, vuelve a preguntar. Si está sigue con el siguiente predicado
-  (genre(AnswerGenre, _) -> true; (write(AnswerGenre), write(': Es un genero musical invalido\n\n'), fail)),
+  (genre(AnswerGenre, _) -> true; (write(AnswerGenre), write(': No es un genero musical valido.\n\n'), fail)),
 
   % write('¿Cuál es tu cantante favorito?\n'),
   % read(AnswerArtist).
 
   % Imprime la lista de canciones que coinciden con los parametros
-  song_list(AnswerMood, AnswerGenre), nl,
+  % Segun el estado de animo y el genero musical que da el usuario, que imprima una lista de canciones que coincidan con los parametros
+  % Por ejemplo, si el estado de animo es 'strong' y el genero musical es 'Rap', entonces imprimir una lista de canciones de Rap que tengan el estado de animo 'strong'
+  song_list(AnswerMood, AnswerGenre).
+
   song_list(Mood, Genre) :-
-    findall(Song, song(_, Mood, Song, _, Genre, _), Songs),
-    write('Canciones: '), writeln(Songs).
+    write('\n'),
+    write('Canciones que coinciden con tu estado de animo y tu genero musical favorito:\n'),
+    forall(song(_, Mood, Title, Artist, Genre, _), writeln(Title)),
+    write('\n').
+    
 
 
   % Pregunta si quiere volver a ejecutar el programa
@@ -165,9 +171,6 @@ iniciar :-
 
 
 % Predicados
-% Segun el estado de animo y el genero musical que da el usuario, que imprima una lista de canciones que coincidan con los parametros
-% Por ejemplo, si el estado de animo es 'strong' y el genero musical es 'Rap', entonces imprimir una lista de canciones de Rap que tengan el estado de animo 'strong'
-
 
 
 % Ejecutar el programa

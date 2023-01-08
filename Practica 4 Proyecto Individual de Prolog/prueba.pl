@@ -95,7 +95,7 @@ submenu(0, Y) :-
     key_option(YesOrNo, X),
     nl.
 
-%The second submenu
+%The second submenu Y = Genre
 submenu(1, Y) :-
     write("You might be feeling:"),nl,
     genre(Y, [H|_]), write(H),nl,
