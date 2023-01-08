@@ -349,7 +349,7 @@ song(g_minor, unhappy, 'APA', 'Mora, Quevedo', reggaeton, 2022).
 song(a_minor, melancolic, 'Siguelo Bailando', 'Ozuna', reggaeton, 2017).
 song(f_major, relax, 'Aventura', 'Lunay, Ozuna, Anuel AA', reggaeton, 2019).
 song(c_major, happy, 'Otro trago', 'Sech, Darell', reggaeton, 2019).
-song(c_major, happy, 'Amuleto', 'Maikel Delacalle', reggaeton, 2018).
+song(c_major, happy, 'Yonaguni', 'Bad Bunny', reggaeton, 2021).
 song(c_major, happy, 'Gasolina', 'Daddy Yankee', reggaeton, 2004).
 song(c_major, happy, 'Dile Que Tu Me Quieres', 'Ozuna', reggaeton, 2018).
 song(a_minor, melancolic, 'Me acostumbre', 'Bad Bunny, Arcangel', reggaeton, 2017).
@@ -428,13 +428,14 @@ write_down_list([H|T]) :-
     write(H), nl, write_down_list(T). %Print all list items
 
 % Ejecutar el programa
-:- (initialization iniciar).
+:- (initialization main_menu).
 
-iniciar :-
+main_menu :-
+    write('Bienvenido a la aplicacion de recomendacion de canciones.\n\n'),
     repeat,
-    write('¿Cómo te sientes hoy?\n'),
+    write('¿Cómo te sientes hoy?\n\n'),
     forall(key(_, Mood), writeln(Mood)),
-    write('\n'),
+    write('\nElige un estado de animo.\n'),
     read(AnswerMood),
     (key(_, AnswerMood) -> true; write(AnswerMood), write(': No es un estado de animo valido.\n\n'), fail),
     repeat,
@@ -450,4 +451,9 @@ iniciar :-
     write_down_list(List),
     % Si no hay canciones que coincidan con el estado de animo y el genero
     (List = [] -> write('No hay canciones que coincidan con el estado de animo y el genero.\n\n'); true),
-    write('\n').
+    write('\n'),
+
+    % Preguntar si quiere mas recomendaciones
+    write('¿Quieres mas recomendaciones? (si/no)\n'),
+    read(Answer),
+    (Answer = 'si' -> true, main_menu; write('Gracias por usar la aplicacion.\n'), halt).
