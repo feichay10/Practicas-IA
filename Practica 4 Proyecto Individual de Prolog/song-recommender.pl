@@ -425,44 +425,27 @@ song(a_minor, melancolic, 'Rise Up', 'TheFatRat', electronic, 2019).
 
 write_down_list([]).
 write_down_list([H|T]) :-
-    write(H),
-    nl,
-    write_down_list(T). %Print all list items
-
+    write(H), nl, write_down_list(T). %Print all list items
 
 % Ejecutar el programa
 :- (initialization iniciar).
 
 iniciar :-
     repeat,
-    write('¿Genreómo te sientes hoy?\n'),
+    write('¿Cómo te sientes hoy?\n'),
     forall(key(_, Mood), writeln(Mood)),
     write('\n'),
     read(AnswerMood),
-    (   key(_, AnswerMood)
-    ->  true
-    ;   write(AnswerMood),
-        write(': No es un estado de animo valido.\n\n'),
-        fail
-    ),
+    (key(_, AnswerMood) -> true; write(AnswerMood), write(': No es un estado de animo valido.\n\n'), fail),
     repeat,
     write('¿Qué género musical te gusta más?\n'),
     forall(genre(Genre, _), writeln(Genre)),
     write('\n'),
     read(AnswerGenre),
-    (   genre(AnswerGenre, _)
-    ->  true
-    ;   write(AnswerGenre),
-        write(': No es un genero musical valido.\n\n'),
-        fail
-    ),
-    findall(song(AnswerMood, AnswerGenre, Title, Artist, Genre, Year),
-            song(_,
-                 AnswerMood,
-                 Title,
-                 Artist,
-                 Genre,
-                 Year),
-            List),
+    (genre(AnswerGenre, _) -> true; write(AnswerGenre), write(': No es un genero musical valido.\n\n'), fail),
+    write('Estas son las canciones que te recomiendo del genero '),
+    write(AnswerGenre), write(' y estado de animo '), write(AnswerMood), write(':\n'),
+    % Quiero imprimir solo la cancion y el artista
+    findall([Song, Artist], song(_, AnswerMood, Song, Artist, AnswerGenre, _), List),
     write_down_list(List),
     write('\n').
