@@ -7,10 +7,9 @@
 % Autor: Cheuk Kelly Ng Pante (alu0101364544@ull.edu.es)
 % Fecha: 11/01/2023
 
-Crea un programa en Prolog que segun lo siguiente:
-
 % Clave (key) del tipo de canciones, establece una relacion entre la clave y el estado de animo
 % key(nombre, estado_de_animo) 
+
 key(a_major, joyful).
 key(a_minor, melancholic).
 key(b_major, strong).
@@ -74,9 +73,9 @@ song(b_major, strong, 'Savage', 'Megan Thee Stallion', 'Rap', 2020).
 song(c_major, happy, 'WAP', 'Cardi B, Megan Thee Stallion', 'Rap', 2020).
 
 % Hip-Hop
-song(d_major, euphoric, 'Hotline Bling', 'Drake', 'Hip-hop', 2015)
-song(a_minor, melancolic, 'All the Way Up', 'Fat Joe', 'Hip-hop', 2016)
-song(b_minor, solitary, 'Bodak Yellow', 'Cardi B', 'Hip-hop', 2017)
+song(d_major, euphoric, 'Hotline Bling', 'Drake', 'Hip-hop', 2015).
+song(a_minor, melancolic, 'All the Way Up', 'Fat Joe', 'Hip-hop', 2016).
+song(b_minor, solitary, 'Bodak Yellow', 'Cardi B', 'Hip-hop', 2017).
 
 % RnB
 song(f_major, relax, 'Moises', 'Choclock', 'RnB', 2020).
@@ -133,81 +132,35 @@ song(e_major, powered, 'Pieces', 'AVAION', 'Electronic', 2019).
 song(c_minor, sad, 'Levels', 'Avicii', 'Electronic', 2011).
 song(d_major, euphoric, 'Silent Shout', 'The Knife', 'Electronic', 2006).
 
-haga una serie de preguntas al usuario del tipo: ¿como te sientes hoy?, ¿genero favorito?, etc. Y segun los datos del usuario, que recomiende una serie de canciones que hay en la base de datos que te he dado.
-
-% Preguntas al usuario
-% ¿Como te sientes hoy?
-% ¿Que genero musical te gusta mas?
-% ¿Cual es tu cantante favorito?
-
 iniciar :-
-  write('¿Como te sientes hoy?'), nl,
-  write('1. Alegre'), nl,
-  write('2. Melancolico'), nl,
-  write('3. Fuerte'), nl,
-  write('4. Solitario'), nl,
-  write('5. Feliz'), nl,
-  write('6. Triste'), nl,
-  write('7. Euforico'), nl,
-  write('8. Preocupado'), nl,
-  write('9. Enfadado'), nl,
-  write('10. Inquieto'), nl,
-  write('11. Relajado'), nl,
-  write('12. Depresivo'), nl,
-  write('13. Calmado'), nl,
-  write('14. Infeliz'), nl,
+  repeat,
+  write('¿Cómo te sientes hoy?\n'),
+  forall(key(_, Mood), writeln(Mood)),
+  write('\n'),
+  read(AnswerMood),
+  % Comprueba si el estado de animo esta en la base de conocimiento y si no esta, vuelve a preguntar. Si está sigue con el siguiente predicado
+  (key(_, AnswerMood) -> true; (write(AnswerMood), write(': Es un estado de animo invalido\n\n'), fail)),
 
-  read(answer_mood),
+  repeat,
+  write('¿Qué género musical te gusta más?\n'),
+  forall(genre(Genre, _), writeln(Genre)),
+  write('\n'),
+  read(AnswerGenre),
+  % Comprueba si el genero musical esta en la base de conocimiento y si no esta, vuelve a preguntar. Si está sigue con el siguiente predicado
+  (genre(AnswerGenre, _) -> true; (write(AnswerGenre), write(': Es un genero musical invalido\n\n'), fail)),
 
-  write('¿Que genero musical te gusta mas?'), nl,
-  write('1. Pop'), nl,
-  write('2. Rock'), nl,
-  write('3. Dance'), nl,
-  write('4. Techno'), nl,
-  write('5. Rap'), nl,
-  write('6. Hip-hop'), nl,
-  write('7. RnB'), nl,
-  write('8. Soul'), nl,
-  write('9. Disco'), nl,
-  write('10. Classical'), nl,
-  write('11. Blues'), nl,
-  write('12. Jazz'), nl,
-  write('13. Reggae'), nl,
-  write('14. Reggaeton'), nl,
-  write('15. Metal'), nl,
-  write('16. Trap'), nl,
-  write('17. Electronic'), nl,
+  write('¿Cuál es tu cantante favorito?\n'),
+  read(AnswerArtist).
 
-  read(answer_genre),
-
-  write('¿Cual es tu cantante favorito?'), nl,
-  read(answer_artist).
+  song_list(AnswerMood, AnswerGenre).
 
 % Predicados
+% Segun el estado de animo y el genero musical que da el usuario, que imprima una lista de canciones que coincidan con los parametros
+% Por ejemplo, si el estado de animo es 'strong' y el genero musical es 'Rap', entonces imprimir una lista de canciones de Rap que tengan el estado de animo 'strong'
+song_list(Mood, Genre) :-
+  findall(Song, song(_, Mood, Song, _, Genre, _), SongList),
+  write(SongList).
 
-% Recorra la base de datos y muestre las canciones que coincidan con el estado de animo del usuario
-mood(answer_mood) :-
-  song(_, answer_mood, Song, Artist, Genre, Year),
-  write('Song: '), write(Song), nl,
-  write('Artist: '), write(Artist), nl,
-  write('Genre: '), write(Genre), nl,
-  write('Year: '), write(Year), nl.
-
-% Recorra la base de datos y muestre las canciones que coincidan con el genero musical favorito del usuario
-genre(answer_genre) :-
-  song(_, _, Song, Artist, answer_genre, Year),
-  write('Song: '), write(Song), nl,
-  write('Artist: '), write(Artist), nl,
-  write('Genre: '), write(answer_genre), nl,
-  write('Year: '), write(Year), nl.
-
-% Recorra la base de datos y muestre las canciones que coincidan con el cantante favorito del usuario
-artist(answer_artist) :-
-  song(_, _, Song, answer_artist, Genre, Year),
-  write('Song: '), write(Song), nl,
-  write('Artist: '), write(answer_artist), nl,
-  write('Genre: '), write(Genre), nl,
-  write('Year: '), write(Year), nl.
 
 % Ejecutar el programa
 :- initialization iniciar.

@@ -423,21 +423,6 @@ song(a_major, joyful, 'Caviar', 'Two Feet', 'Electronic', 2022).
 song(e_minor, restless, 'Where Are Ü Now', 'Jack Ü, Skrillex, Diplo, Justin Bieber', 'Electronic', 2015).
 song(a_minor, melancolic, 'Rise Up', 'TheFatRat', 'Electronic', 2019).
 
-% % Preguntas al usuario sobre sus preferencias musicales
-% pregunta_genero :-
-%   write('¿Cuál es tu género musical preferido? '),
-%   read(Genero),
-%   asserta(genero(Genero)).
-
-% pregunta_artista :-
-%   write('¿Cuál es tu artista o banda favorita? '),
-%   read(Artista),
-%   asserta(artista(Artista)).
-
-% pregunta_decada :-
-%   write('¿Qué década de lanzamiento de canciones prefieres? '),
-%   read(Decada),
-%   asserta(decada(Decada)).
 
 % % Regla para buscar en la base de datos de canciones y encontrar aquella que se ajuste a las preferencias del usuario
 % recomendaciones(Recomendaciones) :-
@@ -452,10 +437,63 @@ song(a_minor, melancolic, 'Rise Up', 'TheFatRat', 'Electronic', 2019).
 %   write('Te recomendamos estas canciones: '),
 %   write(Recomendaciones).
 
-pregunta_animo :-
-  write('¿Cómo te sientes hoy? '),
-  read(Animo),
-  asserta(animo(Animo)).
+comprobar_estado_animo(Mood) :-
+  write(Mood),
+  write(': No es un estado de animo\n'), nl,
+  findall(Mood, key(_, Mood), MoodList),
+  member(Mood, MoodList).
+
+comprobar_genero_musical(Genre) :-
+  write(Genre),
+  write(': No es un genero musical\n'), nl,
+  findall(Genre, genre(Genre, _), GenreList),
+  member(Genre, GenreList).
+
+iniciar :-
+  repeat,
+  write('¿Cómo te sientes hoy?\n'),
+  forall(key(_, Mood), writeln(Mood)),
+  write('\n'),
+  read(AnswerMood),
+  comprobar_estado_animo(AnswerMood), !,
+
+  write('¿Qué género musical te gusta más?\n'),
+  forall(genre(Genre, _), writeln(Genre)),
+  write('\n'),
+  read(AnswerGenre),
+  comprobar_genero_musical(AnswerGenre), !,
+
+  write('¿Cuál es tu cantante favorito?\n'),
+  read(AnswerArtist).
+
+% Predicados
+
+% Recorra la base de datos y muestre las canciones que coincidan con el estado de animo del usuario
+% mood(answer_mood) :-
+%   song(_, answer_mood, Song, Artist, Genre, Year),
+%   write('Song: '), write(Song), nl,
+%   write('Artist: '), write(Artist), nl,
+%   write('Genre: '), write(Genre), nl,
+%   write('Year: '), write(Year), nl.
+
+% % Recorra la base de datos y muestre las canciones que coincidan con el genero musical favorito del usuario
+% genre(answer_genre) :-
+%   song(_, _, Song, Artist, answer_genre, Year),
+%   write('Song: '), write(Song), nl,
+%   write('Artist: '), write(Artist), nl,
+%   write('Genre: '), write(answer_genre), nl,
+%   write('Year: '), write(Year), nl.
+
+% % Recorra la base de datos y muestre las canciones que coincidan con el cantante favorito del usuario
+% artist(answer_artist) :-
+%   song(_, _, Song, answer_artist, Genre, Year),
+%   write('Song: '), write(Song), nl,
+%   write('Artist: '), write(answer_artist), nl,
+%   write('Genre: '), write(Genre), nl,
+%   write('Year: '), write(Year), nl.
+
+% Ejecutar el programa
+:- initialization iniciar.
 
 % Utilizar la información del estado de ánimo del usuario para buscar en la base de datos de canciones y encontrar aquellas que tengan un estilo que se ajuste a su estado de ánimo.
 recomendaciones(Recomendaciones) :-
