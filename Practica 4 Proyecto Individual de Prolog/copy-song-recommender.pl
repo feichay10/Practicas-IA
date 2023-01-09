@@ -603,7 +603,8 @@ create_window :-
     send(D, append, button('Cancelar', message(D, return, @nil))),
     get(D, confirm_centered, AnswerMood),
     send(D, destroy),
-    (AnswerMood == @nil -> write('Cancelado'), nl; write(AnswerMood), nl),
+    % Comprobar que el estado de animo es valido 
+    (key(_, AnswerMood) -> false; parameter_check, fail),
 
     new(D2, dialog('¿Qué tipo de música te gusta?')),
     send(D2, append, new(T2, text_item('¿Qué tipo de música te gusta?'))),
@@ -612,6 +613,17 @@ create_window :-
     get(D2, confirm_centered, AnswerGenre),
     send(D2, destroy),
     (AnswerGenre == @nil -> write('Cancelado'), nl; write(AnswerGenre), nl).
+
+parameter_check :-
+    new(D, dialog('Estado de animo no valido')),
+    send(D, append, new(T, text_item('Estado de animo no valido'))),
+    send(D, append, button('Aceptar', message(D, return, T?selection))),
+    send(D, append, button('Cancelar', message(D, return, @nil))),
+    get(D, confirm_centered, Answer),
+    send(D, destroy),
+    write(Answer), nl.
+
+
 
 
 % Ejecutar el programa
