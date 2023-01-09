@@ -132,46 +132,33 @@ song(e_major, powered, 'Pieces', 'AVAION', 'Electronic', 2019).
 song(c_minor, sad, 'Levels', 'Avicii', 'Electronic', 2011).
 song(d_major, euphoric, 'Silent Shout', 'The Knife', 'Electronic', 2006).
 
-iniciar :-
-  repeat,
-  write('¿Cómo te sientes hoy?\n'),
-  forall(key(_, Mood), writeln(Mood)),
-  write('\n'),
-  read(AnswerMood),
-  % Comprueba si el estado de animo esta en la base de conocimiento y si no esta, vuelve a preguntar. Si está sigue con el siguiente predicado
-  (key(_, AnswerMood) -> true; (write(AnswerMood), write(': No es un estado de animo valido.\n\n'), fail)),
+write_down_list([]).
+write_down_list([H|T]) :-
+    write(H), nl, write_down_list(T).
 
-  repeat,
-  write('¿Qué género musical te gusta más?\n'),
-  forall(genre(Genre, _), writeln(Genre)),
-  write('\n'),
-  read(AnswerGenre),
-  % Comprueba si el genero musical esta en la base de conocimiento y si no esta, vuelve a preguntar. Si está sigue con el siguiente predicado
-  (genre(AnswerGenre, _) -> true; (write(AnswerGenre), write(': No es un genero musical valido.\n\n'), fail)),
+:- (initialization main_menu).
 
-  % write('¿Cuál es tu cantante favorito?\n'),
-  % read(AnswerArtist).
-
-  % Imprime la lista de canciones que coinciden con los parametros
-  % Segun el estado de animo y el genero musical que da el usuario, que imprima una lista de canciones que coincidan con los parametros
-  % Por ejemplo, si el estado de animo es 'strong' y el genero musical es 'Rap', entonces imprimir una lista de canciones de Rap que tengan el estado de animo 'strong'
-  song_list(AnswerMood, AnswerGenre).
-
-  song_list(Mood, Genre) :-
+main_menu :-
+    write('Bienvenido a la aplicacion de recomendacion de canciones.\n\n'),
+    repeat,
+    write('¿Cómo te sientes hoy?\n\n'),
+    forall(key(_, Mood), writeln(Mood)),
+    write('\nElige un estado de animo.\n'),
+    read(AnswerMood),
+    (key(_, AnswerMood) -> true; write(AnswerMood), write(': No es un estado de animo valido.\n\n'), fail),
+    repeat,
+    write('¿Qué género musical te gusta más?\n'),
+    forall(genre(Genre, _), writeln(Genre)),
     write('\n'),
-    write('Canciones que coinciden con tu estado de animo y tu genero musical favorito:\n'),
-    forall(song(_, Mood, Title, Artist, Genre, _), writeln(Title)),
-    write('\n').
-    
+    read(AnswerGenre),
+    (genre(AnswerGenre, _) -> true; write(AnswerGenre), write(': No es un genero musical valido.\n\n'), fail),
+    write('Estas son las canciones que te recomiendo del genero \"'),
+    write(AnswerGenre), write('\" y estado de animo \"'), write(AnswerMood), write('\":\n'),
+    findall([Song, Artist], song(_, AnswerMood, Song, Artist, AnswerGenre, _), List),
+    write_down_list(List),
+    (List = [] -> write('No hay canciones que coincidan con el estado de animo y el genero.\n\n'); true),
+    write('\n'),
 
-
-  % Pregunta si quiere volver a ejecutar el programa
-  % write('\n¿Quieres volver a ejecutar el programa? (s/n)\n'),
-  % read(Answer),
-
-
-% Predicados
-
-
-% Ejecutar el programa
-:- initialization iniciar.
+    write('¿Quieres mas recomendaciones? (si/no)\n'),
+    read(Answer),
+    (Answer = 'si' -> true, main_menu; write('Gracias por usar la aplicacion.\n'), halt).

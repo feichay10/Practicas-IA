@@ -12,6 +12,9 @@
 % 2. https://ledgernote.com/blog/interesting/musical-key-characteristics-emotions/
 % 3. https://open.spotify.com
 
+:- use_module(library(gtk_swipl)).
+
+
 % Key del tipo de songes
 key(a_major, joyful).
 key(a_minor, melancholic).
@@ -427,8 +430,16 @@ write_down_list([]).
 write_down_list([H|T]) :-
     write(H), nl, write_down_list(T). %Print all list items
 
+create_window(Title) :-
+    new(Window, dialog(Title)),
+    send(Window, append, new(button(click_me))),
+    send(Window, open).
+
 % Ejecutar el programa
 :- (initialization main_menu).
+
+% Crea una ventana de GTK con el titulo "Bienvenido a la aplicacion de recomendacion de canciones."
+create_window('Recomendador de canciones').
 
 main_menu :-
     write('Bienvenido a la aplicacion de recomendacion de canciones.\n\n'),
