@@ -450,7 +450,7 @@ main_menu :-
         read(AnswerMood),
         (key(_, AnswerMood) -> true; write(AnswerMood), write(': No es un estado de animo valido.\n\n'), fail),
         repeat,
-        write('\n\n¿Qué género musical te gusta más?\n'),
+        write('\n\n¿Qué género musical te gusta más?\n\n'),
         forall(genre(Genre, _), writeln(Genre)),
         write('\n'),
         read(AnswerGenre),
@@ -465,7 +465,7 @@ main_menu :-
         findall(Key, key(Key, AnswerMood), KeyList),
         write_down_list(KeyList),
         % Si no hay canciones que coincidan con el estado de animo y el genero
-        (List = [] -> write('No hay canciones que coincidan con el estado de animo y el genero.\n\n'); true),
+        (List = [] -> write('\nNo hay canciones que coincidan con el estado de animo y el genero.\n\n'); true),
         write('\n'),
 
         % Preguntar si quiere mas recomendaciones
