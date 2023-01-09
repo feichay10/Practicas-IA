@@ -441,39 +441,41 @@ main_menu :-
     tab(20), write('==========================================================\n'),
     tab(20), write('¡Bienvenido a la aplicacion de recomendacion de canciones!\n'),
     tab(20), write('==========================================================\n\n'),
-    repeat,
-    write('\n¿Cómo te sientes hoy?\n\n'),
-    forall(key(_, Mood), writeln(Mood)),
-    write('\nElige un estado de animo.\n'),
-    read(AnswerMood),
-    (key(_, AnswerMood) -> true; write(AnswerMood), write(': No es un estado de animo valido.\n\n'), fail),
-    repeat,
-    write('\n\n¿Qué género musical te gusta más?\n'),
-    forall(genre(Genre, _), writeln(Genre)),
-    write('\n'),
-    read(AnswerGenre),
-    (genre(AnswerGenre, _) -> true; write(AnswerGenre), write(': No es un genero musical valido.\n\n'), fail),
-    write('\n\nEstas son las canciones que te recomiendo del genero \"'),
-    write(AnswerGenre), write('\" y estado de animo \"'), write(AnswerMood), write('\":\n'),
-    % Busca las canciones que coincidan con el estado de animo y el genero en la base de conocimiento
-    findall([Song, Artist], song(_, AnswerMood, Song, Artist, AnswerGenre, _), List),
-    write_down_list(List),
-    % Recomienda la "key" que coincide con el estado de animo
-    write('\n\nTe recomiendo buscar canciones con esta \"key\": \n'),
-    findall(Key, key(Key, AnswerMood), KeyList),
-    write_down_list(KeyList),
-    % Si no hay canciones que coincidan con el estado de animo y el genero
-    (List = [] -> write('No hay canciones que coincidan con el estado de animo y el genero.\n\n'); true),
-    write('\n'),
+    again.
+    again :-
+        repeat,
+        write('\n¿Cómo te sientes hoy?\n\n'),
+        forall(key(_, Mood), writeln(Mood)),
+        write('\nElige un estado de animo.\n'),
+        read(AnswerMood),
+        (key(_, AnswerMood) -> true; write(AnswerMood), write(': No es un estado de animo valido.\n\n'), fail),
+        repeat,
+        write('\n\n¿Qué género musical te gusta más?\n'),
+        forall(genre(Genre, _), writeln(Genre)),
+        write('\n'),
+        read(AnswerGenre),
+        (genre(AnswerGenre, _) -> true; write(AnswerGenre), write(': No es un genero musical valido.\n\n'), fail),
+        write('\n\nEstas son las canciones que te recomiendo del genero \"'),
+        write(AnswerGenre), write('\" y estado de animo \"'), write(AnswerMood), write('\":\n'),
+        % Busca las canciones que coincidan con el estado de animo y el genero en la base de conocimiento
+        findall([Song, Artist], song(_, AnswerMood, Song, Artist, AnswerGenre, _), List),
+        write_down_list(List),
+        % Recomienda la "key" que coincide con el estado de animo
+        write('\n\nTe recomiendo buscar canciones con esta \"key\": \n'),
+        findall(Key, key(Key, AnswerMood), KeyList),
+        write_down_list(KeyList),
+        % Si no hay canciones que coincidan con el estado de animo y el genero
+        (List = [] -> write('No hay canciones que coincidan con el estado de animo y el genero.\n\n'); true),
+        write('\n'),
 
-    % Preguntar si quiere mas recomendaciones
-    repeat,
-    write('¿Quieres mas recomendaciones? (si/no)\n'),
-    read(Answer),
-    % Si se introduce una opcion no valida, si/no, repite el ciclo
-    (Answer = 'si' -> true; Answer = 'no' -> true; write(Answer), write(': No es una opcion valida.\n\n'), fail),
-    (Answer = 'si' -> true, main_menu; nl, nl,
-        tab(20), write('================================\n'),
-        tab(20), write('¡Gracias por usar la aplicacion!\n'),
-        tab(20), write('================================\n\n'),
-        write('\n'), halt).
+        % Preguntar si quiere mas recomendaciones
+        repeat,
+        write('¿Quieres mas recomendaciones? (si/no)\n'),
+        read(Answer),
+        % Si se introduce una opcion no valida, si/no, repite el ciclo
+        (Answer = 'si' -> true; Answer = 'no' -> true; write(Answer), write(': No es una opcion valida.\n\n'), fail),
+        (Answer = 'si' -> true, again; nl, nl,
+            tab(20), write('================================\n'),
+            tab(20), write('¡Gracias por usar la aplicacion!\n'),
+            tab(20), write('================================\n\n'),
+            write('\n'), halt).
