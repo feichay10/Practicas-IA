@@ -12,8 +12,6 @@
 % 2. https://ledgernote.com/blog/interesting/musical-key-characteristics-emotions/
 % 3. https://open.spotify.com
 
-:- use_module(library(gtk_swipl)).
-
 
 % Key del tipo de songes
 key(a_major, joyful).
@@ -428,7 +426,7 @@ song(a_minor, melancolic, 'Rise Up', 'TheFatRat', electronic, 2019).
 
 write_down_list([]).
 write_down_list([H|T]) :-
-    write(H), nl, write_down_list(T). %Print all list items
+    write(H), nl, write_down_list(T). 
 
 create_window(Title) :-
     new(Window, dialog(Title)),
@@ -437,9 +435,6 @@ create_window(Title) :-
 
 % Ejecutar el programa
 :- (initialization main_menu).
-
-% Crea una ventana de GTK con el titulo "Bienvenido a la aplicacion de recomendacion de canciones."
-create_window('Recomendador de canciones').
 
 main_menu :-
     write('Bienvenido a la aplicacion de recomendacion de canciones.\n\n'),
@@ -457,9 +452,13 @@ main_menu :-
     (genre(AnswerGenre, _) -> true; write(AnswerGenre), write(': No es un genero musical valido.\n\n'), fail),
     write('Estas son las canciones que te recomiendo del genero \"'),
     write(AnswerGenre), write('\" y estado de animo \"'), write(AnswerMood), write('\":\n'),
-    % Quiero imprimir solo la cancion y el artista
+    % Busca las canciones que coincidan con el estado de animo y el genero en la base de conocimiento
     findall([Song, Artist], song(_, AnswerMood, Song, Artist, AnswerGenre, _), List),
     write_down_list(List),
+    % Recomienda la "key" que coincide con el estado de animo
+    write('\n\nTe recomiendo buscar canciones con esta \"key\": \n'),
+    findall(Key, key(Key, AnswerMood), KeyList),
+    write_down_list(KeyList),
     % Si no hay canciones que coincidan con el estado de animo y el genero
     (List = [] -> write('No hay canciones que coincidan con el estado de animo y el genero.\n\n'); true),
     write('\n'),
