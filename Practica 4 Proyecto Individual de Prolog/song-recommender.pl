@@ -428,7 +428,7 @@ write_down_list([]).
 write_down_list([H|T]) :-
     write(H), nl, write_down_list(T). 
 
-% Ejecutar el programa
+% Ejecutar el programa automaticamente
 :- (initialization main_menu).
 
 main_menu :-
