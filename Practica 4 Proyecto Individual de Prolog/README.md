@@ -1,6 +1,4 @@
 # Proyecto Individual de Prolog
-
-## El programa
 Este proyecto consiste en un programa en Prolog que recomienda canciones según el estado de ánimo que tiene el usuario en 
 ese momento. Además, pregunta por el género favorito. Con las respuestas dadas por el usuario va a recomendar una seria de
 canciones que están en la base de datos del programa.
