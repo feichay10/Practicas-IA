@@ -22,7 +22,7 @@ key(c_major, feliz).
 key(c_minor, triste). 
 key(d_major, triunfante). 
 key(d_minor, serio). 
-key(e_major, bullisioso).
+key(e_major, bullicioso).
 key(e_minor, inquieto). 
 key(f_major, furioso). 
 key(f_minor, depresivo).
@@ -48,7 +48,7 @@ genre(metal).
 genre(trap).
 genre(electronic).
 
-% Definimos una base de datos de canciones con información sobre el género, el estilo y el artista
+% Definimos una base de datos de canciones con información sobre la key, mood, cancion, artista, el género y el año de lanzamiento
 % song(key, mood, cancion, artista, genero, año)
 
 % Pop
@@ -66,10 +66,10 @@ song(c_major, feliz, 'feliz', 'Pharrell Williams', pop, 2014).
 song(g_major, calmado, 'Shake It Off', 'Taylor Swift', pop, 2014).
 song(g_minor, descontento, 'Roar', 'Katy Perry', pop, 2013).
 song(g_major, calmado, 'Call Me Maybe', 'Carly Rae Jepsen', pop, 2012).
-song(e_major, bullisioso, 'Party Rock Anthem', 'LMFAO', pop, 2011).
+song(e_major, bullicioso, 'Party Rock Anthem', 'LMFAO', pop, 2011).
 song(f_major, furioso, 'Just The Way You Are', 'Bruno Mars', pop, 2010).
 song(a_major, alegre, 'Love The Way You Lie', 'Eminem, Rihanna', pop, 2010).
-song(e_major, bullisioso, 'Poker Face', 'Lady Gaga', pop, 2009).
+song(e_major, bullicioso, 'Poker Face', 'Lady Gaga', pop, 2009).
 song(c_major, feliz, 'Bad Romance', 'Lady Gaga', pop, 2009).
 song(a_major, alegre, 'Boom Boom Pow', 'Black Eyed Peas', pop, 2009).
 
@@ -86,7 +86,7 @@ song(e_minor, inquieto, 'Paranoid', 'Black Sabbath', rock, 1970).
 song(f_minor, depresivo, 'Enter Sandman', 'Metallica', rock, 1991).
 song(e_minor, inquieto, 'Nothing Else Matters', 'Metallica', rock, 1991).
 song(a_major, alegre, 'Back In Black', 'AC/DC', rock, 1980).
-song(e_major, bullisioso, 'Thunderstruck', 'AC/DC', rock, 1990).
+song(e_major, bullicioso, 'Thunderstruck', 'AC/DC', rock, 1990).
 song(f_minor, depresivo, 'Highway To Hell', 'AC/DC', rock, 1979).
 song(a_minor, melancolicoo, 'Stairway To Heaven', 'Led Zeppelin', rock, 1971).
 song(d_major, triunfante, 'Hotel California', 'Eagles', rock, 1976).
@@ -136,7 +136,7 @@ song(e_minor, inquieto, 'Tsunami', 'DVBBS & Borgeous', techno, 2013).
 song(c_major, feliz, 'Animals', 'Martin Garrix', techno, 2013).
 song(d_major, triunfante, 'Alone', 'Marshmello', techno, 2016).
 song(e_minor, inquieto, 'In The Name Of Love', 'Martin Garrix, Bebe Rexha', techno, 2016).
-song(e_major, bullisioso, 'Silence', 'Marshmello, Khalid', techno, 2017).
+song(e_major, bullicioso, 'Silence', 'Marshmello, Khalid', techno, 2017).
 
 % Rap 
 song(a_minor, melancolicoo, 'The Box', 'Roddy Ricch', rap, 2020).
@@ -217,7 +217,7 @@ song(f_minor, depresivo, 'I Feel a Change', 'Charles Bradley ft. Menahan Street 
 song(c_minor, triste, 'I Need a Dolar', 'Aloe Blacc', soul, 2010).
 song(g_major, calmado, 'Mad About You', 'Son Little', soul, 2017).
 song(b_minor, solitario, 'Counting on me', 'Jordan Max', soul, 2022).
-song(e_major, bullisioso, 'Distant Lover', 'Marvin Gaye', soul, 1973).
+song(e_major, bullicioso, 'Distant Lover', 'Marvin Gaye', soul, 1973).
 song(c_minor, triste, 'Call You When I Get Home', 'Santino Le Saint', soul, 2020).
 song(a_minor, melancolico, 'The Bloom', 'Wesley Joseph', soul, 2021).
 song(g_major, calmado, 'Gold', 'Brandon Banks', soul, 2020).
@@ -281,12 +281,12 @@ song(d_major, triunfante, 'Still Rainin', 'Jonny Lang', blues, 2006).
 song(a_minor, melancolico, 'Sloe Gin', 'Joe Bonamassa', blues, 2007).
 song(d_minor, serio, 'Caught Out In The Rain', 'Beth Hart', blues, 2011).
 song(c_minor, triste, 'Baddest Blues', 'Beth Hart', blues, 2013).
-song(e_major, bullisioso, 'My California', 'Beth Hart', blues, 2010).
+song(e_major, bullicioso, 'My California', 'Beth Hart', blues, 2010).
 song(c_major, feliz, 'Blues of Desperation', 'Joe Bonamassa', blues, 2016).
 song(a_major, alegre, 'This Train', 'Derek Trucks Band', blues, 2002).
 song(b_minor, solitario, 'Get What You Deserve', 'Derek Trucks Band', blues, 2004).
 song(c_major, feliz, 'I Know', 'Derek Trucks Band', blues, 2006).
-song(e_major, bullisioso, 'You Got The Silver', 'Susan Tedeschi', blues, 2005).
+song(e_major, bullicioso, 'You Got The Silver', 'Susan Tedeschi', blues, 2005).
 song(f_minor, depresivo, 'Voodoo Woman', 'Koko Taylor', blues, 2003).
 song(c_major, feliz, 'Livin On Love', 'Shemekia Copeland', blues, 2002).
 song(g_minor, descontento, 'Aint Got Time For Hate', 'Shemekia Copeland', blues, 2018).
@@ -295,7 +295,7 @@ song(f_major, furioso, 'My Babe', 'Little Walter', blues, 1993).
 % Jazz
 song(c_major, feliz, 'Take the A Train', 'Duke Ellington', jazz, 1941).
 song(g_major, calmado, 'Round Midnight', 'Thelonious Monk', jazz, 1947).
-song(e_major, bullisioso, 'My Favorite Things', 'John Coltrane', jazz, 1961).
+song(e_major, bullicioso, 'My Favorite Things', 'John Coltrane', jazz, 1961).
 song(c_major, feliz, 'So What', 'Miles Davis', jazz, 1959).
 song(d_minor, serio, 'Blue in Green', 'Miles Davis', jazz, 1959).
 song(c_major, feliz, 'All Blues', 'Miles Davis', jazz, 1959).
@@ -372,7 +372,7 @@ song(b_major, fuerte, 'November Rain', 'Guns N Roses', metal, 1992).
 song(a_major, alegre, 'Numb', 'Linkin Park', metal, 2003).
 song(d_minor, serio, 'In the End', 'Linkin Park', metal, 2000).
 song(g_major, calmado, 'The Unforgiven', 'Metallica', metal, 1991).
-song(e_major, bullisioso, 'Thunderstruck', 'AC/DC', metal, 1990).
+song(e_major, bullicioso, 'Thunderstruck', 'AC/DC', metal, 1990).
 song(c_major, feliz, 'Run to the Hills', 'Iron Maiden', metal, 1982).
 song(c_major, feliz, 'Hallowed Be Thy Name', 'Iron Maiden', metal, 1982).
 song(d_major, triunfante, 'Breaking the Law', 'Judas Priest', metal, 1980).
@@ -383,11 +383,11 @@ song(f_major, furioso, 'Children of the Grave', 'Black Sabbath', metal, 1971).
 % Trap
 song(a_minor, melancolico, 'Si la Calle Llama', 'Eladio Carrion', trap, 2022).
 song(g_major, calmado, 'Llegamos', 'Quevedo', trap, 2020).
-song(e_major, bullisioso, 'Eladio Carrion: Bzrp Music Session', 'Eladio Carrion, Bizarrap', trap, 2021).
-song(e_major, bullisioso, 'Habla Claro', 'Eladio Carrion, Morad', trap, 2021).
+song(e_major, bullicioso, 'Eladio Carrion: Bzrp Music Session', 'Eladio Carrion, Bizarrap', trap, 2021).
+song(e_major, bullicioso, 'Habla Claro', 'Eladio Carrion, Morad', trap, 2021).
 song(b_major, fuerte, 'I Get the Bag', 'Gucci Mane, Migos', trap, 2017).
 song(c_minor, triste, 'Tootsie Slide', 'Drake', trap, 2020).
-song(e_major, bullisioso, 'Mo Bamba', 'Sheck Wes', trap, 2018).
+song(e_major, bullicioso, 'Mo Bamba', 'Sheck Wes', trap, 2018).
 song(c_major, feliz, 'Kod', 'J. Cole', trap, 2018).
 song(c_major, feliz, 'One Dance', 'Drake', trap, 2016).
 song(c_major, feliz, 'Black Beatles', 'Rae Sremmurd, Gucci Mane', trap, 2016).
@@ -403,7 +403,7 @@ song(g_major, calmado, 'Mbappe', 'Eladio Carrion', trap, 2022).
 song(c_major, feliz, 'Dos Mil 16', 'Bad Bunny', trap, 2022).
 
 % Electronic
-song(e_major, bullisioso, 'Pieces', 'AVAION', electronic, 2019).
+song(e_major, bullicioso, 'Pieces', 'AVAION', electronic, 2019).
 song(c_minor, triste, 'Levels', 'Avicii', electronic, 2011).
 song(d_major, triunfante, 'Silent Shout', 'The Knife', electronic, 2006).
 song(a_minor, melancolico, 'We Are Your Friends', 'Justice', electronic, 2007).
@@ -450,13 +450,15 @@ main_menu :-
         write('\n'),
         read(AnswerGenre),
         (genre(AnswerGenre) -> true; write(AnswerGenre), write(': No es un genero musical valido.\n\n'), fail),
-        % Busca las canciones que coincidan con el estado de animo y el genero en la base de conocimiento
+
+        % Busca las canciones que coincidan con el estado de animo y el genero en la base de conocimiento y las guarda en una lista que es List
         findall([Song, Artist], song(_, AnswerMood, Song, Artist, AnswerGenre, _), List),
         % Si no hay canciones que coincidan con el estado de animo y el genero salta a answer_more
         (List = [] -> write('\nNo hay canciones que coincidan con el estado de animo y el genero.\n\n'), answer_more; true),
         % Si hay canciones que coincidadn con el estado de animo y genero las imprime
         write('\n\nEstas son las canciones que te recomiendo del genero \"'), write(AnswerGenre), write('\" y estado de animo \"'), write(AnswerMood), write('\":\n'),
         write_down_list(List),
+
         % Recomienda la "key" que coincide con el estado de animo
         write('\n\nTe recomiendo buscar canciones con esta \"key\": \n'),
         findall(Key, key(Key, AnswerMood), KeyList),
