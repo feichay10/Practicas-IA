@@ -87,7 +87,7 @@ song(f_minor, depresivo, 'Enter Sandman', 'Metallica', rock, 1991).
 song(e_minor, inquieto, 'Nothing Else Matters', 'Metallica', rock, 1991).
 song(a_major, alegre, 'Back In Black', 'AC/DC', rock, 1980).
 song(e_major, bullicioso, 'Thunderstruck', 'AC/DC', rock, 1990).
-song(f_minor, depresivo, 'Highway To Hell', 'AC/DC', rock, 1979).
+song(f_minor, depresivo, 'Hells Bells', 'AC/DC', rock, 1979).
 song(a_minor, melancolicoo, 'Stairway To Heaven', 'Led Zeppelin', rock, 1971).
 song(d_major, triunfante, 'Hotel California', 'Eagles', rock, 1976).
 song(c_major, feliz, 'Smoke On The Water', 'Deep Purple', rock, 1972).
@@ -424,6 +424,7 @@ song(a_major, alegre, 'Caviar', 'Two Feet', electronic, 2022).
 song(e_minor, inquieto, 'Where Are Ü Now', 'Jack Ü, Skrillex, Diplo, Justin Bieber', electronic, 2015).
 song(a_minor, melancolico, 'Rise Up', 'TheFatRat', electronic, 2019).
 
+% Llamada recursiva a write_down_list hasta que la lista este vacia
 write_down_list([]).
 write_down_list([H|T]) :-
     write(H), nl, write_down_list(T). 
@@ -444,10 +445,11 @@ main_menu :-
         write('\nElige un estado de animo.\n'),
         read(AnswerMood),
         (key(_, AnswerMood) -> true; write(AnswerMood), write(': No es un estado de animo valido.\n\n'), fail),
+        
         repeat,
         write('\n\n¿Qué género musical te gusta más?\n\n'),
         forall(genre(Genre), writeln(Genre)),
-        write('\n'),
+        write('\nElige un género musical.\n'),
         read(AnswerGenre),
         (genre(AnswerGenre) -> true; write(AnswerGenre), write(': No es un genero musical valido.\n\n'), fail),
 
