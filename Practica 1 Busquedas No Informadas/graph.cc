@@ -61,6 +61,8 @@ void Graph::bfsWeightedAlgorithm(int start_node, int end_node, std::string graph
   std::vector<int> adyacense(num_node, 0);    
   std::vector<int> cost(num_node, 0);         
   std::vector<int> path;
+  std::vector<int> nodes_inspected;
+  std::vector<int> nodes_generated;
   int inspected = 0;
   int generated = 0;
 
@@ -71,6 +73,7 @@ void Graph::bfsWeightedAlgorithm(int start_node, int end_node, std::string graph
     int node = queue.front();   // Obtiene el primer elemento de la queue y lo guarda en node
     queue.pop();                // Elimina el primer elemento de la queue
     inspected++;                // Incrementa el numero de nodos inspeccionados
+    nodes_inspected.push_back(node); // Almacena el nodo inspeccionado
 
     if (node == end_node) {  // Si el nodo es el nodo de destino
       std::cout << "Nodo de destino encontrado" << std::endl;
@@ -101,6 +104,18 @@ void Graph::bfsWeightedAlgorithm(int start_node, int end_node, std::string graph
       output_file << ";" << cost[end_node] << ";" << inspected << ";" << generated << std::endl;
       std::cout << std::endl;
 
+      std::cout << "Nodos inspeccionados: {";
+      for (const auto& inspected_node : nodes_inspected) {
+        std::cout << inspected_node + 1 << ", ";
+      }
+      std::cout << "}"<< std::endl;
+
+      std::cout << "Nodos generados: {";
+      for (const auto& generated_node : nodes_generated) {
+        std::cout << generated_node + 1 << ", ";
+      }
+      std::cout << "}"<< std::endl;
+
       exit(0);
     } else {                                                  // Si el nodo no es el nodo de destino    
       for (int i = 0; i < num_node; i++) {                    // Recorre todos los nodos
@@ -111,6 +126,7 @@ void Graph::bfsWeightedAlgorithm(int start_node, int end_node, std::string graph
           adyacense[i] = graph[node][i];                      // Marca el nodo actual como adyacente del nodo
           cost[i] = cost[node] + adyacense[i];                // Guarda el coste total del nodo actual
           generated++;                                        // Incrementa el numero de nodos generados
+          nodes_generated.push_back(i);                       // Almacena el nodo generado
         }
       }
     }
@@ -119,6 +135,8 @@ void Graph::bfsWeightedAlgorithm(int start_node, int end_node, std::string graph
   std::cout << "Nodo de destino no encontrado" << std::endl;
   std::cout << "Nodos inspected: " << inspected << std::endl;
   std::cout << "Nodos generated: " << generated << std::endl;
+
+
   exit(0);
 }
 
